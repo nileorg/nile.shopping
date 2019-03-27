@@ -49,3 +49,25 @@ p {
   font-size: 16px;
   line-height: 1.5;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--darker);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #69BAE8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4db3ff;
+}
