@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { HashLink as Link } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 import '../styles/main-nav.scss'
 
@@ -21,6 +22,7 @@ export default class extends Component {
        })
     });
   }
+
   render () {
     console.log('activeClass: ', this.state.activeClass);
     return (
@@ -30,10 +32,31 @@ export default class extends Component {
           <span>Nile</span>
         </Link>
         <div className="nav-menu">
-          <Link smooth to="#ecosystem" className="nav-item" activeClassName="active">Ecosystem</Link>
-          <Link smooth to="#vendor" className="nav-item" activeClassName="active">Vendor</Link>
-          <Link smooth to="#supplier" className="nav-item" activeClassName="active">Supplier</Link>
-          <Link smooth to="#customer" className="nav-item" activeClassName="active">Customer</Link>
+          <Link
+            to="#ecosystem"
+            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="nav-item"
+            activeClassName="active"
+            >Ecosystem
+          </Link>
+          <Link
+            to="#use-cases"
+            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="nav-item"
+            activeClassName="active">Use Cases
+          </Link>
+          <Link
+            to="#news"
+            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="nav-item"
+            activeClassName="active">News
+          </Link>
+          <Link
+            to="#contact"
+            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="nav-item"
+            activeClassName="active">Discord
+          </Link>
         </div>
       </nav>
 

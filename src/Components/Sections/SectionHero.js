@@ -1,5 +1,6 @@
 import React from "react"
 import { Layout, Button } from 'element-react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import hero from '../../assets/hero-nile.jpg'
 
@@ -13,7 +14,9 @@ export default props =>
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.</p>
-          <Button type="primary" size="large" >Scroll down</Button>
+          <Link smooth to="#ecosystem" className="el-button ">
+            Down
+          </Link>
         </Layout.Col>
       </Layout.Row>
     </div>

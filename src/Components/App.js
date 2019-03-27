@@ -10,13 +10,10 @@ import '../styles/card.scss'
 
 import Navigation from './Navigation'
 import SectionHero from './Sections/SectionHero'
-import SectionCards from './Sections/SectionCards'
-import SectionMedium from './Sections/SectionMedium'
-import SectionTwitter from './Sections/SectionTwitter'
-import SectionDiscord from './Sections/SectionDiscord'
-import SectionVendor from './Sections/SectionVendor'
-import SectionSupplier from './Sections/SectionSupplier'
-import SectionCustomer from './Sections/SectionCustomer'
+import SectionEcosystem from './Sections/SectionEcosystem'
+import SectionUseCases from './Sections/SectionUseCases'
+import SectionNews from './Sections/SectionNews'
+import SectionContact from './Sections/SectionContact'
 import Footer from './Footer'
 
 export default class extends Component {
@@ -47,14 +44,11 @@ export default class extends Component {
           <Navigation />
 
           <SectionHero />
-          <SectionCards />
-          <SectionMedium articles={this.state.latest_article} />
-          <SectionVendor />
-          <SectionTwitter />
-          <SectionSupplier />
-          <SectionDiscord />
-          <SectionCustomer />
-          
+          <SectionEcosystem />
+          <SectionUseCases />
+          <SectionNews articles={this.state.latest_article} />
+          <SectionContact />
+
           <Footer />
         </BrowserRouter>
       </div>

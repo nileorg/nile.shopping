@@ -8,7 +8,7 @@
   position: relative;
   background-color: var(--white);
   &__light {
-    background-color: #efefef;
+    background-color: #f5f8fa;
   }
   &__dark {
     background-image: linear-gradient(to right bottom, #081c1d, #0a2223, #0c2829, #0d2f2f, #0f3535);
@@ -40,33 +40,47 @@
   img {
     width: 500px;
   }
+  hr {
+    border-color: rgba(0,0,0,.05);
+  }
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 }
 
 // ------------------------------------------
 //  S E C T I O N   U S E   C A S E S
 // ------------------------------------------
-
+.section--use-case {
+  img {
+    border-radius: 100%;
+  }
+  color: var(--dark);
+}
 .el-collapse {
   border: none;
   margin-left: 40px;
+  .el-collapse-item__wrap {
+    background-color: transparent;
+    border-bottom: none;
+  }
   .el-collapse-item {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     &__header {
       position: relative;
       border: none;
       font-size: 24px;
       font-weight: 700;
+      background-color: transparent;
       i {
         display: none;
       }
     }
     &__content {
-      border: none;
       font-size: 16px;
       line-height: 1.5;
-      border-bottom-color: rgba(0,0,0,0);
-      background-color: transparent;
-      border-image-width: 0;
     }
     .counter {
       position: absolute;
@@ -79,6 +93,7 @@
       align-items: center;
       color: var(--dark);
       background-color: rgba(0,0,0,.05);
+      transition: all 200ms ease-in-out;
     }
     &.is-active {
       .counter {
@@ -86,6 +101,5 @@
         color: var(--white);
       }
     }
-
   }
 }
