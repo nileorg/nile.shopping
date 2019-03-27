@@ -14,8 +14,10 @@ export default props =>
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.</p>
-          <Link smooth to="#ecosystem" className="el-button ">
-            Down
+          <Link
+            to="#ecosystem"
+            scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            className="el-button el-button--primary">Discover more
           </Link>
         </Layout.Col>
       </Layout.Row>
