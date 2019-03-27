@@ -1,0 +1,15 @@
+// ------------------------------------------
+//  B U T T O N   O V E R W R I T E S
+// ------------------------------------------
+
+.el-button {
+  border-radius: 100px;
+  border: 1px solid rgba(0,0,0,.15);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  font-family: 'Nunito';
+  &--primary {
+    background-image: linear-gradient(to right bottom, #0b5d9e, #0074a9, #0089ae, #2e9db0, #5ab0b2);
+  }
+}

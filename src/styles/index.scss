@@ -1,0 +1,51 @@
+// ------------------------------------------
+//  G E N E R A L   S T Y L E S
+// ------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// ------------------------------------------
+//  B A S I C   T Y P O G R A P H Y
+// ------------------------------------------
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}

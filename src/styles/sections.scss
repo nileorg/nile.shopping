@@ -1,0 +1,91 @@
+// ------------------------------------------
+//  B A S I C   S E C T I O N S
+// ------------------------------------------
+
+.section {
+  padding: 100px 0;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--white);
+  &__light {
+    background-color: #efefef;
+  }
+  &__dark {
+    background-image: linear-gradient(to right bottom, #081c1d, #0a2223, #0c2829, #0d2f2f, #0f3535);
+    color: var(--white);
+  }
+  &__primary {
+    background-image: linear-gradient(to right bottom, #0b5d9e, #0074a9, #0089ae, #2e9db0, #5ab0b2);
+    color: var(--white);
+  }
+  &__secondary {
+    background-image: linear-gradient(to right bottom, #139b48, #48a84f, #69b558, #86c263, #a2cf6f);
+    color: var(--white);
+  }
+}
+
+// ------------------------------------------
+//  S E C T I O N   H E R O
+// ------------------------------------------
+
+.section--hero {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  padding-top: 170px;
+}
+
+.section--use-case {
+  img {
+    width: 500px;
+  }
+}
+
+// ------------------------------------------
+//  S E C T I O N   U S E   C A S E S
+// ------------------------------------------
+
+.el-collapse {
+  border: none;
+  margin-left: 40px;
+  .el-collapse-item {
+    margin-bottom: 15px;
+    &__header {
+      position: relative;
+      border: none;
+      font-size: 24px;
+      font-weight: 700;
+      i {
+        display: none;
+      }
+    }
+    &__content {
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+      border-bottom-color: rgba(0,0,0,0);
+      background-color: transparent;
+      border-image-width: 0;
+    }
+    .counter {
+      position: absolute;
+      left: -40px;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--dark);
+      background-color: rgba(0,0,0,.05);
+    }
+    &.is-active {
+      .counter {
+        background-color: #69BAE8;
+        color: var(--white);
+      }
+    }
+
+  }
+}
