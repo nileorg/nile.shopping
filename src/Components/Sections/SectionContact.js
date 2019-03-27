@@ -12,9 +12,10 @@ export default class extends Component {
             <Layout.Col span="12" className="center">
               <img className="sm-icon-bg" alt="Discord" src={icon} />
               <h2>Join our Discord</h2>
-              <p style={{marginBottom: 30}}>Every week we post new insights about
-                our progress, team, ideas and evaluations on Medium. Follow us to
-                stay up to date!
+              <p style={{marginBottom: 30}}>
+                To get in touch with us please join our Discord Server. We
+                really don't like emails and hope you feel the same or don't
+                mind about it. See you there!
               </p>
               <a
                 href="https://twitter.com/nile_org"
