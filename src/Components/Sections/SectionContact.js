@@ -6,7 +6,7 @@ import icon from "../../assets/discord_dark.svg"
 export default class extends Component {
   render () {
     return (
-      <div className="section section__light" id="contact">
+      <div className="section" id="contact">
         <div className="container">
           <Layout.Row type="flex" justify="center" >
             <Layout.Col span="12" className="center">
@@ -18,6 +18,8 @@ export default class extends Component {
               </p>
               <a
                 href="https://twitter.com/nile_org"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="el-button el-button--primary el-button--large"
               >Join now
               </a>

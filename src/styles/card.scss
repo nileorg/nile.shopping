@@ -7,6 +7,7 @@
   padding: 30px;
   border-radius: 10px;
   border: 1px solid rgba(0,0,0,.15);
+  color: var(--dark);
   img {
     height: 200px;
   }
@@ -15,8 +16,15 @@
   }
 }
 
+.medium-card {
+  text-decoration: none;
+  color: var(--dark);
+}
+
 .el-card {
-  border: none;
+  border: 1px solid rgba(0,0,0,.15);
+  box-shadow: none;
+  border-radius: 10px;
   img {
     width: 100%;
   }
@@ -25,6 +33,14 @@
     flex-direction: column;
     padding: 15px 20px 20px 20px;
   }
+  &:hover {
+    background-color: #f5f8fa;
+  }
+}
+
+.twitter-timeline {
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.15) !important;
 }
 
 .sm-icon-bg {
