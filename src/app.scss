@@ -1,0 +1,24 @@
+.section {
+  padding: 100px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section--hero {
+  height: calc(100vh - 60px);
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+}
+
+.twitter-timeline {
+  width: 50%;
+}
+
+.image {
+  width: 100%;
+}

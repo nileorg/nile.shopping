@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "element-react": "^1.4.33",
+    "element-theme-default": "^1.4.13",
+    "node-sass": "^4.11.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
+    "react-hot-loader": "^4.8.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
   "scripts": {
