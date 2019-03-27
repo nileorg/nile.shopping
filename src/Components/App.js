@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Router, Route, Switch } from "react-router-dom"
 
 import '../styles/variables.scss'
 import '../styles/helpers.scss'
@@ -38,10 +38,11 @@ export default class extends Component {
     }
 
   render() {
+
     return (
       <div className="app">
         <BrowserRouter>
-          <Navigation />
+          <Route path='/' component={Navigation} />
 
           <SectionHero />
           <SectionEcosystem />

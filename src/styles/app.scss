@@ -63,3 +63,90 @@
   -o-animation: rotating 100s linear infinite;
   animation: rotating 100s linear infinite;
 }
+
+@-webkit-keyframes rotation-1 /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.logo-rotation-1 {
+  -webkit-animation: rotation-1 10s linear infinite;
+  -moz-animation: rotation-1 10s linear infinite;
+  -ms-animation: rotation-1 10s linear infinite;
+  -o-animation: rotation-1 10s linear infinite;
+  animation: rotation-1 10s linear infinite;
+}
+
+@-webkit-keyframes rotation-2 /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.logo-rotation-2 {
+  -webkit-animation: rotation-2 8s linear infinite;
+  -moz-animation: rotation-2 8s linear infinite;
+  -ms-animation: rotation-2 8s linear infinite;
+  -o-animation: rotation-2 8s linear infinite;
+  animation: rotation-2 8s linear infinite;
+}
+
+
+@-webkit-keyframes rotation-3 /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.logo-rotation-3 {
+  -webkit-animation: rotation-3 6s linear infinite;
+  -moz-animation: rotation-3 6s linear infinite;
+  -ms-animation: rotation-3 6s linear infinite;
+  -o-animation: rotation-3 6s linear infinite;
+  animation: rotation-3 6s linear infinite;
+}
+
+
+
+@-webkit-keyframes rotation-4 /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.logo-rotation-4 {
+  -webkit-animation: rotation-4 4s linear infinite;
+  -moz-animation: rotation-4 4s linear infinite;
+  -ms-animation: rotation-4 4s linear infinite;
+  -o-animation: rotation-4 4s linear infinite;
+  animation: rotation-4 4s linear infinite;
+}
