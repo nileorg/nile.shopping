@@ -9,7 +9,10 @@
   text-decoration: none;
   transition: all 200ms ease-in-out;
   font-family: 'Nunito';
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 15px 40px;
   &--primary {
-    background-image: linear-gradient(to right bottom, #0b5d9e, #0074a9, #0089ae, #2e9db0, #5ab0b2);
+    background-color: #69BAE8;
   }
 }
