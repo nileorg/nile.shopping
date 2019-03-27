@@ -5,6 +5,7 @@ import Slide from 'react-reveal/Slide';
 
 import '../styles/main-nav.scss'
 import logo from '../assets/logo_1.svg'
+import nile_typo from '../assets/nile_typo.svg'
 
 export default class extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ export default class extends Component {
               <img alt="nile" className="logo logo-rotation-3" src={logo} />
               <img alt="nile" className="logo logo-rotation-4" src={logo} />
             </div>
-            <span>Nile</span>
+            <img alt="nile typo" className="nile-typo" src={nile_typo}/>
           </Link>
           <div className="nav-menu">
             <Link
