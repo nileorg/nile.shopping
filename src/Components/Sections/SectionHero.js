@@ -6,6 +6,8 @@ import Fade from 'react-reveal/Fade';
 
 import hero from '../../assets/nile-hero-bg.jpg'
 import earth from '../../assets/earth.svg'
+import divider from '../../assets/nile-hero-divider.svg'
+import caret from '../../assets/caret-down.svg'
 
 export default props =>
   <div className="section section--hero" id="hero" style={{backgroundImage: `url(${hero})`}}>
@@ -29,5 +31,20 @@ export default props =>
     </div>
     <div className="earth-wrapper animation-target">
       <img alt="earth" src={earth} className="earth rotating" />
+    </div>
+    <div className="hero-divider">
+    <Link
+      to="#ecosystem"
+      scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+      className="scroll-down"
+      style={{color: '#ffffff', textDecoration: 'none'}}
+      >
+        <span>Scroll down</span>
+        <img alt="caret" src={caret} className="caret" />
+
+    </Link>
+
+
+      <img alt="divider" src={divider} className="divider"/>
     </div>
   </div>

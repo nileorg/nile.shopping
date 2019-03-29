@@ -35,6 +35,7 @@
   background-size: cover;
   color: var(--white);
   padding-top: 170px;
+  overflow: hidden;
   .earth-wrapper {
     position: absolute;
     bottom: -250px;
@@ -45,6 +46,45 @@
   .earth {
     width: 100%;
   }
+  .hero-divider {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .divider {
+      width: 100%;
+    }
+    .scroll-down {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: .5;
+      transition: all 200ms ease-in-out;
+      span {
+        margin-bottom: 5px;
+        font-weight: 900;
+      }
+      .caret {
+        animation: MoveUpDown 500ms alternate infinite;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(5px); }
+}
+@keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(5px); }
 }
 
 // ------------------------------------------
