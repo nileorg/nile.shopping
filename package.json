@@ -2,7 +2,7 @@
   "name": "nile-home",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://huhn511.github.io/nile-home",
+  "homepage": "https://demo.nile.community",
   "dependencies": {
     "element-react": "^1.4.33",
     "element-theme-default": "^1.4.13",
