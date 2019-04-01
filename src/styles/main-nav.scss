@@ -157,6 +157,9 @@ img.logo.logo-rotation-4 {
   .main-nav {
     &.open {
       background-color: var(--dark);
+      &.normal {
+        background-color: var(--white);
+      }
     }
     .menu-btn-container {
       height: 70px;

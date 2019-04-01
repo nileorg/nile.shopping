@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react'
 import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../assets/heros/customer_hero.jpg'
-import divider from '../assets/heros/divider.svg'
-import avatar from '../assets/avatars/customer-circled.jpg'
+import hero from '../../assets/heros/customer_hero.jpg'
+import divider from '../../assets/heros/divider.svg'
+import avatar from '../../assets/avatars/customer-circled.jpg'
 
 export default class extends Component {
   render () {

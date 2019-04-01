@@ -2,15 +2,15 @@ import React, { Component, Fragment } from 'react'
 import { Layout, Collapse } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../assets/heros/vendor_hero.jpg'
-import divider from '../assets/heros/divider.svg'
-import avatar from '../assets/avatars/vendor-circled.jpg'
+import hero from '../../assets/heros/vendor_hero.jpg'
+import divider from '../../assets/heros/divider.svg'
+import avatar from '../../assets/avatars/vendor-circled.jpg'
 
-import dashboard from '../assets/mockups/dashboard.png'
-import product from '../assets/mockups/product.png'
-import order from '../assets/mockups/order.png'
-import cashier from '../assets/mockups/cashier.png'
-import settings from '../assets/mockups/settings.png'
+import dashboard from '../../assets/mockups/dashboard.png'
+import product from '../../assets/mockups/product.png'
+import order from '../../assets/mockups/order.png'
+import cashier from '../../assets/mockups/cashier.png'
+import settings from '../../assets/mockups/settings.png'
 
 export default class extends Component {
   render () {

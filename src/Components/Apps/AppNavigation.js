@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 
-import '../styles/app-nav.scss'
-import caret from '../assets/icons/caret-left.svg'
+import '../../styles/app-nav.scss'
+import caret from '../../assets/icons/caret-left.svg'
 
 export default class extends Component {
   render () {

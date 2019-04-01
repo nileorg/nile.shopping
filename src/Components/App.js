@@ -22,11 +22,11 @@ import Footer from './Footer'
 
 import Imprint from './Imprint'
 
-import AppNavigation from './AppNavigation'
+import AppNavigation from './Apps/AppNavigation'
 
-import VendorHome from './VendorHome'
-import SupplierHome from './SupplierHome'
-import CustomerHome from './CustomerHome'
+import VendorHome from './Apps/VendorHome'
+import SupplierHome from './Apps/SupplierHome'
+import CustomerHome from './Apps/CustomerHome'
 
 class App extends Component {
 
@@ -56,7 +56,6 @@ const HomeContainer = (props) => (
     <SectionEcosystem />
     <SectionUseCases />
     <SectionMission />
-
     <SectionNews />
     <SectionContact />
 
