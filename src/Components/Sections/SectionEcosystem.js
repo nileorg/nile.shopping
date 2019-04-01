@@ -16,8 +16,11 @@ export default props =>
             <h2>Ecosystem</h2>
             <p>
               Who needs to be empowered to let local economies flourish again?
-              To strengthen local economies we have basically three groups of
-              people to empower.
+              It's the people, the ones that want to sell something - called
+              vendors, the ones that want to ship something - called suppliers
+              and the ones that want to buy something - called customers.
+              So to strengthen local economies we have three groups of
+              people with different problems and requirements.
             </p>
           </Fade>
         </Layout.Col>
@@ -29,11 +32,11 @@ export default props =>
               <img alt="Vendor" src={vendor}/>
               <h3>Vendor</h3>
               <p>
-                People willing to sell something. There are many different
-                businesses and people that are already selling products or
-                services, but many of them does not have the capacities nor the
-                money to conquer the web and there might also be even more
-                people that have the potential but not yet the platform to do so.
+                Think of small businesses like backeries, joineries and
+                flower shops selling products. Or think of hair studios,
+                doctors offices and repair shops selling services. We can even
+                think of usual people selling art, honey and services they do
+                hobby wise.
               </p>
               <button
                 style={{marginTop: 30}}
@@ -49,11 +52,10 @@ export default props =>
               <img alt="supplier" src={supplier}/>
               <h3>Supplier</h3>
               <p>
-                 People willing to ship something. Shipping products from one
-                place to another is mostly done by corporations right now.
-                Instead we could use the potential of usual people that drive
-                around every day. They simply could pick up packages on their
-                path and deliver it to the target location.
+                Think of people driving to work everyday. Suppliers can see
+                which packages are easy to ship depending on their route. This
+                way the delivery is not just very efficient since there are
+                almost no extra miles, the supplier also get rewards on the fly.
               </p>
               <button
                 style={{marginTop: 30}}
@@ -70,11 +72,10 @@ export default props =>
               <h3>Customer</h3>
               <p>
                 More and more people get aware of the importance of local
-                economies. They see how many local businesses needs to close,
-                but do not want to be without the service quality of platforms
-                like amazon. Empowering people with a platform to have the same
-                service quality but supporting local products and services has the
-                potential to transform the awareness into real world action.
+                economies. Empowering people with a platform to have a great
+                service quality but supporting local people instead of giant
+                cooperations has the potential to transform the awareness into
+                action.
               </p>
               <button
                 style={{marginTop: 30}}

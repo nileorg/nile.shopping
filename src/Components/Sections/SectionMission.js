@@ -8,7 +8,7 @@ import feeless from '../../assets/feeless.svg'
 import permissionless from '../../assets/permissionless.svg'
 
 export default props =>
-  <div className="section section__light" id="ecosystem">
+  <div className="section section__light section__border-top" id="ecosystem">
     <div className="container">
       <Layout.Row type="flex" justify="center" style={{marginBottom: 50}}>
         <Layout.Col  span="12" className="center">

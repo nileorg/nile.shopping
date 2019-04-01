@@ -30,7 +30,7 @@ export default class extends Component {
   render () {
     const article = this.state.latest_article
     return (
-      <div className="section" id="news">
+      <div className="section section__border-top" id="news">
         <div className="container">
           <Layout.Row type="flex" justify="center" style={{marginBottom: 50}}>
             <Layout.Col  span="12" className="center">

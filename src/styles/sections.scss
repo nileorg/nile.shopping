@@ -23,6 +23,9 @@
     background-image: linear-gradient(to right bottom, #139b48, #48a84f, #69b558, #86c263, #a2cf6f);
     color: var(--white);
   }
+  &__border-top {
+    border-top: 1px solid rgba(0,0,0,.15);
+  }
 }
 
 // ------------------------------------------
@@ -110,14 +113,10 @@
       }
     }
   }
-  &.resized {
-
-  }
 }
 
 .section--showcase {
   height: 890px;
-  border-top: 1px solid rgba(0,0,0,.15);
   .mockup {
     position: absolute;
     left: -170px;

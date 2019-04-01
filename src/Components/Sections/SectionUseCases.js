@@ -11,7 +11,7 @@ import customer from "../../assets/customer-circled.jpg"
 export default class extends Component {
   render () {
     return (
-      <div className="section section--use-case " id="use-cases">
+      <div className="section section--use-case section__border-top" id="use-cases">
         <div className="container">
 
           <Layout.Row gutter="60" style={{marginBottom: 100}}>
@@ -84,19 +84,27 @@ export default class extends Component {
               </Fade>
               <Fade right>
                 <Collapse accordion value="0">
-                  <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
-                    <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
+                  <Collapse.Item
+                    title={<span><span className="counter">1</span>Pick up packages on your path</span>}>
+                    <div>Whenever you drive from one place to another you can
+                    enter your path and see where you can pickup packages</div>
                   </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
-                    <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
+                  <Collapse.Item
+                    title={<span><span className="counter">2</span>Guided delivery</span>}>
+                    <div>As soon as you picked up the packages you will be guided
+                    to your target locations.</div>
                   </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
-                    <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
-                    <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
-                    <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
+                  <Collapse.Item
+                    title={<span><span className="counter">3</span>Earn rewards</span>}>
+                    <div>By delivering packages to customers you earn some money
+                    for the delivery.</div>
                   </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
-                    <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
+                  <Collapse.Item
+                    title={<span><span className="counter">4</span>Find buddies</span>}>
+                    <div>Especially older generations rely on people that bring
+                    their products right at their door. You can enter fixed
+                    relationships with people to help them whenever they need
+                    something.</div>
                   </Collapse.Item>
                 </Collapse>
                 <div style={{marginTop: 50}}>
@@ -131,19 +139,19 @@ export default class extends Component {
               </Fade>
               <Fade left>
                 <Collapse accordion value="0">
-                  <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
-                    <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
+                  <Collapse.Item title={<span><span className="counter">1</span>Discover your neighborhood</span>} >
+                    <div>You can find businesses and people offering products and
+                    services right in your neighborhood.</div>
                   </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
-                    <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
+                  <Collapse.Item title={<span><span className="counter">2</span>Delivery at your home</span>}>
+                    <div>Many local businesses that currently cannot offer delivery
+                    services will be able to deal with delivery by using the Nile
+                    platform.</div>
                   </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
-                    <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
-                    <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
-                    <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
-                    <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
+                  <Collapse.Item title={<span><span className="counter">3</span>Recurring orders</span>}>
+                    <div>If you buy products frequently you can create recurring
+                    orders. They will be delivered automatically right at your
+                    door.</div>
                   </Collapse.Item>
                 </Collapse>
                 <div style={{marginTop: 50}}>

@@ -47,7 +47,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="section section--showcase">
+        <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
               <Layout.Col span="12">
@@ -89,7 +89,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="section section--showcase">
+        <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
               <Layout.Col span="12">
@@ -131,7 +131,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="section section--showcase">
+        <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
               <Layout.Col span="12">
@@ -173,7 +173,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="section section--showcase">
+        <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
               <Layout.Col span="12">
@@ -215,7 +215,7 @@ export default class extends Component {
           </div>
         </div>
 
-        <div className="section section--showcase">
+        <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
               <Layout.Col span="12">
