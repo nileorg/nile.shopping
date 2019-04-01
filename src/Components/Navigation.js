@@ -68,6 +68,12 @@ export default class extends Component {
             >Use Cases
             </Link>
             <Link
+              to="#mission"
+              scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className={`${this.props.location.hash === '#mission' ? 'active' : ''} nav-item`}
+            >Mission
+            </Link>
+            <Link
               to="#news"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className={`${this.props.location.hash === '#news' ? 'active' : ''} nav-item`}
@@ -77,7 +83,7 @@ export default class extends Component {
               to="#contact"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className={`${this.props.location.hash === '#contact' ? 'active' : ''} nav-item`}
-            >Discord
+            >Contact
             </Link>
           </div>
         </nav>
