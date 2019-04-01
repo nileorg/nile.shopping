@@ -18,6 +18,8 @@ import SectionNews from './Sections/SectionNews'
 import SectionContact from './Sections/SectionContact'
 import Footer from './Footer'
 
+import Imprint from './Imprint'
+
 import AppNavigation from './AppNavigation'
 
 import VendorHome from './VendorHome'
@@ -36,6 +38,7 @@ class App extends Component {
               component={HomeContainer}
             />
             <Route path='/app' component={AppContainer} />
+            <Route path='/imprint' component={ImprintContainer} />
           </Switch>
         </BrowserRouter>
       </div>
@@ -65,6 +68,12 @@ const AppContainer = (props) => (
     <Route path='/app/vendor' component={VendorHome} exact />
     <Route path='/app/supplier' component={SupplierHome} exact />
     <Route path='/app/customer' component={CustomerHome} exact />
+  </Fragment>
+)
+
+const ImprintContainer = (props) => (
+  <Fragment>
+    <Route path='/imprint' component={Imprint} exact />
   </Fragment>
 )
 

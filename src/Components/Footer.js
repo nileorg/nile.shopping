@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from 'react-router-dom'
 
 import '../styles/footer.scss'
 import heart from '../assets/heart.svg'
@@ -11,5 +12,9 @@ export default props =>
       <img alt="heart" src={heart} />
       by Nile
     </span>
-    <span>Imprint</span>
+    <NavLink
+      to="/imprint"
+      activeClassName="active"
+    >Imprint
+    </NavLink>
   </footer>

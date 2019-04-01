@@ -5,9 +5,15 @@ footer {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  span {
+  a {
     display: flex;
+    color: var(--white_50);
+    text-decoration: none;
     align-items: center;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      color: var(--white);
+    }
   }
   img {
     height: 16px;
