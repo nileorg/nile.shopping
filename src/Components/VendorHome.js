@@ -221,7 +221,7 @@ export default class extends Component {
               <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade left>
-                  <img alt="dashboard" src={order} className="mockup mockup--left"/>
+                  <img alt="dashboard" src={settings} className="mockup mockup--left"/>
                 </Fade>
               </Layout.Col>
               <Layout.Col sm="24" md="8" lg="12">

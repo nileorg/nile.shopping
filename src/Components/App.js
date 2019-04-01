@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 import '../styles/variables.scss'
 import '../styles/animations.scss'
@@ -9,8 +9,6 @@ import '../styles/buttons.scss'
 import '../styles/sections.scss'
 import '../styles/card.scss'
 import '../styles/accordion.scss'
-
-import ScrollToTop from './ScrollToTop'
 
 import Navigation from './Navigation'
 import SectionHero from './Sections/SectionHero'

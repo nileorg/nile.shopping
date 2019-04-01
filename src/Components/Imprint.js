@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Layout, Collapse } from 'element-react'
+import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
 import hero from '../assets/imprint_hero.png'
