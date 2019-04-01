@@ -66,3 +66,58 @@
     }
   }
 }
+
+@media only screen and (max-width: 1200px ) {
+
+}
+
+@media only screen and (max-width: 992px ) {
+  .app-nav {
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (max-width: 768px ) {
+
+}
+
+@media only screen and (max-width: 568px) {
+  .app-nav {
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 40px;
+    .back-button {
+      height: 40px;
+      width: 40px;
+    }
+    .app-menu {
+      height: 40px;
+      .app-menu--item {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .app-nav {
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 30px;
+    .back-button {
+      height: 30px;
+      width: 30px;
+    }
+    .app-menu {
+      height: 30px;
+      .app-menu--item {
+        font-size: 14px;
+        padding: 0 10px;
+      }
+    }
+  }
+}

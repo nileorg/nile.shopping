@@ -31,7 +31,7 @@ export default class extends Component {
         <div className="section">
           <div className="container">
             <Layout.Row>
-              <Layout.Col className="" span="12">
+              <Layout.Col sm="24" md="12" lg="12">
                 <Fade top>
                   <h1>Vendor</h1>
                   <p style={{marginBottom: 30}}>
@@ -50,13 +50,13 @@ export default class extends Component {
         <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade left>
                   <img alt="dashboard" src={dashboard} className="mockup mockup--left"/>
                 </Fade>
               </Layout.Col>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="8" lg="12">
                 <Fade top>
                   <h2>Dashboard</h2>
                   <p style={{marginBottom: 30}}>
@@ -68,18 +68,18 @@ export default class extends Component {
                 </Fade>
                 <Fade right>
                   <Collapse accordion value="0">
-                    <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
+                    <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
                       <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
                       <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
                       <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
                       <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
                       <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
+                    <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                       <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
                     </Collapse.Item>
                   </Collapse>
@@ -91,8 +91,8 @@ export default class extends Component {
 
         <div className="section section--showcase section__border-top">
           <div className="container">
-            <Layout.Row>
-              <Layout.Col span="12">
+            <Layout.Row style={{display: 'flex'}} className="flex-reverse-mobile">
+              <Layout.Col sm="24" md="8" lg="12">
                 <Fade top>
                   <h2>Product Management</h2>
                   <p style={{marginBottom: 30}}>
@@ -104,24 +104,24 @@ export default class extends Component {
                 </Fade>
                 <Fade left>
                   <Collapse accordion value="0">
-                    <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
+                    <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
                       <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
                       <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
                       <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
                       <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
                       <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
+                    <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                       <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
                     </Collapse.Item>
                   </Collapse>
                 </Fade>
               </Layout.Col>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade right>
                   <img alt="dashboard" src={product} className="mockup mockup--right"/>
@@ -134,13 +134,13 @@ export default class extends Component {
         <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade left>
                   <img alt="dashboard" src={order} className="mockup mockup--left"/>
                 </Fade>
               </Layout.Col>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="8" lg="12">
                 <Fade top>
                   <h2>Order Management</h2>
                   <p style={{marginBottom: 30}}>
@@ -152,18 +152,18 @@ export default class extends Component {
                 </Fade>
                 <Fade right>
                   <Collapse accordion value="0">
-                    <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
+                    <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
                       <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
                       <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
                       <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
                       <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
                       <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
+                    <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                       <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
                     </Collapse.Item>
                   </Collapse>
@@ -175,8 +175,8 @@ export default class extends Component {
 
         <div className="section section--showcase section__border-top">
           <div className="container">
-            <Layout.Row>
-              <Layout.Col span="12">
+            <Layout.Row style={{display: 'flex'}} className="flex-reverse-mobile">
+              <Layout.Col sm="24" md="8" lg="12">
                 <Fade top>
                   <h2>Cashier System</h2>
                   <p style={{marginBottom: 30}}>
@@ -188,24 +188,24 @@ export default class extends Component {
                 </Fade>
                 <Fade left>
                   <Collapse accordion value="0">
-                    <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
+                    <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
                       <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
                       <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
                       <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
                       <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
                       <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
+                    <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                       <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
                     </Collapse.Item>
                   </Collapse>
                 </Fade>
               </Layout.Col>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade right>
                   <img alt="cashier" src={cashier} className="mockup mockup--right"/>
@@ -218,13 +218,13 @@ export default class extends Component {
         <div className="section section--showcase section__border-top">
           <div className="container">
             <Layout.Row>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="16" lg="12">
                 <span style={{opacity: 0}}>a</span>
                 <Fade left>
                   <img alt="dashboard" src={order} className="mockup mockup--left"/>
                 </Fade>
               </Layout.Col>
-              <Layout.Col span="12">
+              <Layout.Col sm="24" md="8" lg="12">
                 <Fade top>
                   <h2>Settings</h2>
                   <p style={{marginBottom: 30}}>
@@ -236,18 +236,18 @@ export default class extends Component {
                 </Fade>
                 <Fade right>
                   <Collapse accordion value="0">
-                    <Collapse.Item title={<span><span className="counter">1</span>Get started</span>} >
+                    <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
                       <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">2</span>Stock Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
                       <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">3</span>Order Management</span>}>
+                    <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
                       <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
                       <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
                       <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
                     </Collapse.Item>
-                    <Collapse.Item title={<span><span className="counter">4</span>Cashier System</span>}>
+                    <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                       <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
                     </Collapse.Item>
                   </Collapse>

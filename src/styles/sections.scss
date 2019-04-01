@@ -41,6 +41,9 @@
   .mobile-mb-50 {
     margin-bottom: 100px;
   }
+  .flex-reverse-mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 768px ) {
@@ -200,6 +203,47 @@
   }
 }
 
+@media only screen and (max-width: 1200px ) {
+  .section--hero__sm {
+    height: 500px;
+    .container {
+      .avatar-container {
+        width: 250px;
+        padding: 25px;
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px ) {
+  .section--hero__sm {
+    height: 300px;
+    .container {
+      .avatar-container {
+        width: 200px;
+        padding: 25px;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px ) {
+
+}
+
+@media only screen and (max-width: 568px) {
+  .section--hero__sm {
+    min-height: 300px;
+    height: 300px;
+  }
+}
+
 // ------------------------------------------
 //  S E C T I O N   S H O W C A S E
 //  ---
@@ -207,19 +251,74 @@
 // ------------------------------------------
 
 .section--showcase {
-  height: 890px;
+  height: 45vw;
   .mockup {
     position: absolute;
-    left: -170px;
-    height: 690px;
+    width: 50%;
+    left: -100px;
+    height: auto;
     &--right {
       left: auto;
-      right: -170px;
+      right: -100px;
     }
   }
   .container, .el-row  {
     position: static;
   }
+}
+
+@media only screen and (max-width: 1800px ) {
+  .section--showcase {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1200px ) {
+  .section--showcase {
+    .mockup {
+      position: absolute;
+      width: 66%;
+      left: -100px;
+      height: auto;
+      &--right {
+        left: auto;
+        right: -100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px ) {
+  .section--showcase {
+    .mockup {
+      position: relative;
+      width: 100%;
+      margin-bottom: 50px;
+      left: -100px;
+      &--right {
+        left: auto;
+        right: -100px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px ) {
+  .section--showcase {
+    .mockup {
+      position: relative;
+      width: 100%;
+      margin-bottom: 50px;
+      left: -50px;
+      &--right {
+        left: auto;
+        right: -50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
 
 }
 
@@ -241,58 +340,7 @@
     justify-content: flex-end;
     align-items: flex-start;
   }
-  .el-collapse {
-    border: none;
-    margin-left: 40px;
-    .el-collapse-item__wrap {
-      background-color: transparent;
-      border-bottom: none;
-    }
-    .el-collapse-item {
-      margin-bottom: 30px;
-      &__header {
-        position: relative;
-        border: none;
-        font-size: 24px;
-        font-weight: 700;
-        background-color: transparent;
-        display: flex;
-        align-items: center;
-        h4 {
-          margin-bottom: 0;
-        }
-        i {
-          display: none;
-        }
-      }
-      &__content {
-        font-size: 16px;
-        line-height: 1.5;
-      }
-      .counter {
-        position: absolute;
-        left: -40px;
-        height: 40px;
-        width: 40px;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--dark);
-        background-color: rgba(0,0,0,.05);
-        transition: all 200ms ease-in-out;
-      }
-      &.is-active {
-        .counter {
-          background-color: #69BAE8;
-          color: var(--white);
-        }
-      }
-    }
-  }
 }
-
-
 
 @media only screen and (max-width: 1200px ) {
   .section--use-case {
@@ -314,9 +362,6 @@
     .el-row {
       display: flex;
       flex-direction: column;
-      &.flex-reverse-mobile {
-        flex-direction: column-reverse;
-      }
       .just-center-mobile {
         display: flex;
         align-items: center;
@@ -335,24 +380,5 @@
         margin-bottom: 15px;
       }
     }
-    .el-collapse-item__header {
-      h4 {
-        width: 100%;
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 0;
-        .counter {
-          top: 0;
-        }
-      }
-    }
   }
-}
-
-@media only screen and (max-width: 768px ) {
-
-}
-
-@media only screen and (max-width: 568px) {
-
 }

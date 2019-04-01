@@ -8,6 +8,7 @@ import '../styles/app.scss'
 import '../styles/buttons.scss'
 import '../styles/sections.scss'
 import '../styles/card.scss'
+import '../styles/accordion.scss'
 
 import ScrollToTop from './ScrollToTop'
 
