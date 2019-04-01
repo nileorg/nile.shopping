@@ -10,8 +10,8 @@ import customer from '../../assets/customer-circled.jpg'
 export default props =>
   <div className="section section__light" id="ecosystem">
     <div className="container">
-      <Layout.Row type="flex" justify="center" style={{marginBottom: 50}}>
-        <Layout.Col  span="12" className="center">
+      <Layout.Row type="flex" justify="center" style={{ marginBottom: 50 }}>
+        <Layout.Col span="12" className="center">
           <Fade top>
             <h2>Ecosystem</h2>
             <p>
@@ -23,7 +23,7 @@ export default props =>
         </Layout.Col>
       </Layout.Row>
       <Layout.Row gutter="60" >
-        <Layout.Col  span="8" className="center">
+        <Layout.Col span="8" className="center">
           <Flip left>
             <div className="card active">
               <img alt="Vendor" src={vendor}/>
@@ -43,7 +43,7 @@ export default props =>
             </div>
           </Flip>
         </Layout.Col>
-        <Layout.Col  span="8" className="center">
+        <Layout.Col span="8" className="center">
           <Flip left>
             <div className="card">
               <img alt="supplier" src={supplier}/>
@@ -63,7 +63,7 @@ export default props =>
             </div>
           </Flip>
         </Layout.Col>
-        <Layout.Col  span="8" className="center">
+        <Layout.Col span="8" className="center">
           <Flip left>
             <div className="card">
               <img alt="Customer" src={customer}/>
