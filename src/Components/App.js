@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { BrowserRouter, Route, Router, Switch } from "react-router-dom"
 
 import '../styles/variables.scss'
+import '../styles/animations.scss'
 import '../styles/helpers.scss'
 import '../styles/app.scss'
 import '../styles/buttons.scss'

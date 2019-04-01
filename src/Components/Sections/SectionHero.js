@@ -12,7 +12,7 @@ export default props =>
   <div className="section section--hero" id="hero" style={{backgroundImage: `url(${hero})`}}>
     <div className="container">
       <Layout.Row>
-        <Layout.Col className="" span="12">
+        <Layout.Col className="" sm="24" md="12" lg="12">
           <Fade top>
             <h1>Empowering local economies</h1>
             <p style={{marginBottom: 30}}>

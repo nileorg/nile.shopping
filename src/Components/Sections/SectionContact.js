@@ -10,7 +10,7 @@ export default class extends Component {
       <div className="section section__light section__border-top" id="contact">
         <div className="container">
           <Layout.Row type="flex" justify="center" >
-            <Layout.Col span="12" className="center">
+            <Layout.Col sm="18" md="12" lg="12" className="center">
               <Fade top>
                 <img className="sm-icon-bg" alt="Discord" src={icon} />
                 <h2>Join our Discord</h2>

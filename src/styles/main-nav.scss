@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   height: 70px;
   width: 100%;
   display: flex;
@@ -139,15 +139,11 @@ img.logo.logo-rotation-4 {
   opacity: .2;
 }
 
-@media only screen and (max-width: 599px) {
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
 
-}
-
-@media only screen and (min-width: 600px ) {
-
-}
-
-@media only screen and (max-width: 980px ) {
+@media only screen and (max-width: 992px ) {
   .main-nav {
     overflow: visible;
     .menu-btn-container {
@@ -249,8 +245,4 @@ img.logo.logo-rotation-4 {
       }
     }
   }
-}
-
-@media only screen and (min-width: 1260px ) {
-
 }

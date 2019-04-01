@@ -33,7 +33,7 @@ export default class extends Component {
       <div className="section section__border-top" id="news">
         <div className="container">
           <Layout.Row type="flex" justify="center" style={{marginBottom: 50}}>
-            <Layout.Col  span="12" className="center">
+            <Layout.Col sm="18" md="12" lg="12" className="center">
               <Fade top>
                 <h2>News</h2>
                 <p style={{marginBottom: 30}}>Every week we post new insights about
@@ -44,8 +44,8 @@ export default class extends Component {
             </Layout.Col>
           </Layout.Row>
 
-          <Layout.Row gutter="60" style={{marginBottom: 50}}>
-            <Layout.Col span="12">
+          <Layout.Row gutter="60" style={{marginBottom: 50}} className="mobile-align-center">
+            <Layout.Col sm="18" md="12" lg="12" className="mobile-mb-50">
               <div className="sm-container">
                 <Fade left>
                   <img className="sm-icon-bg" alt="Medium" src={medium} />
@@ -69,7 +69,7 @@ export default class extends Component {
                 </Fade>
               </div>
             </Layout.Col>
-            <Layout.Col span="12">
+            <Layout.Col sm="18" md="12" lg="12">
               <div className="sm-container">
                 <Fade right>
                   <img className="sm-icon-bg" alt="Discord" src={twitter} />
@@ -83,6 +83,7 @@ export default class extends Component {
                   </a>
                   <a
                     data-height="20"
+                    width="100%"
                     className="twitter-timeline"
                     href="https://twitter.com/nile_org"
                     data-widget-id="0000000000"

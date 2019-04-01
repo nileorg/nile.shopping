@@ -8,10 +8,10 @@ import feeless from '../../assets/feeless.svg'
 import permissionless from '../../assets/permissionless.svg'
 
 export default props =>
-  <div className="section section__light section__border-top" id="ecosystem">
+  <div className="section section__light section__border-top" id="mission">
     <div className="container">
       <Layout.Row type="flex" justify="center" style={{marginBottom: 50}}>
-        <Layout.Col  span="12" className="center">
+        <Layout.Col sm="18" md="12" lg="12" className="center">
           <Fade top>
             <h2>Mission</h2>
             <p>Nile’s mission is to provide local economies with tools to compete
@@ -25,8 +25,8 @@ export default props =>
           </Fade>
         </Layout.Col>
       </Layout.Row>
-      <Layout.Row gutter="60" >
-        <Layout.Col  span="8" className="center">
+      <Layout.Row gutter="60" className="mobile-align-center">
+        <Layout.Col sm="18" md="8" lg="8" className="center">
           <Flip left>
             <div className="card">
               <img alt="privacy" src={privacy}/>
@@ -37,7 +37,7 @@ export default props =>
             </div>
           </Flip>
         </Layout.Col>
-        <Layout.Col  span="8" className="center">
+        <Layout.Col sm="18" md="8" lg="8" className="center">
           <Flip left>
             <div className="card">
               <img alt="feeless" src={feeless}/>
@@ -48,7 +48,7 @@ export default props =>
             </div>
           </Flip>
         </Layout.Col>
-        <Layout.Col  span="8" className="center">
+        <Layout.Col sm="18" md="8" lg="8" className="center">
           <Flip left>
             <div className="card">
               <img alt="permissionless" src={permissionless}/>
