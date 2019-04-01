@@ -7,11 +7,9 @@ import logo from '../assets/logo_1.svg'
 import nile_typo from '../assets/nile_typo.svg'
 
 export default class extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeClass: 'top'
-    }
+  state = {
+    activeClass: 'top',
+    navActive: false
   }
 
   componentDidMount() {
@@ -28,10 +26,18 @@ export default class extends Component {
     });
   }
 
+  toggleNav = () => {
+    console.log("Nav Toggled", this.state.navActive);
+    this.setState(prevState => ({
+      navActive: !prevState.navActive
+    }))
+  }
+
+
   render () {
     return (
       <Slide top>
-        <nav className={`main-nav ${this.state.activeClass}`}>
+        <nav className={`main-nav ${this.state.activeClass} ${this.state.navActive ? 'open' : ''}`} >
           <Link smooth to="#hero" className={`${this.props.location.hash === '#hero' ? 'active' : ''} nav-item nav-item--logo`}>
             <div className="logo-wrapper">
               <img alt="nile" className="logo logo-rotation-1" src={logo} />
@@ -41,7 +47,14 @@ export default class extends Component {
             </div>
             <img alt="nile typo" className="nile-typo" src={nile_typo}/>
           </Link>
-          <div className="nav-menu">
+          <div className={`${this.state.navActive ? 'open' : ''} ${this.state.activeClass} menu-btn-container`} onClick={this.toggleNav}>
+            <div className="menu-btn">
+              <span className="top"></span>
+              <span className="center"></span>
+              <span className="bottom"></span>
+            </div>
+          </div>
+          <div onClick={this.toggleNav} className={`${this.state.navActive ? 'open' : ''} ${this.state.activeClass} nav-menu`}>
             <Link
               to="#ecosystem"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
