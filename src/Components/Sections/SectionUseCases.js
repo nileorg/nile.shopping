@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'
 
-import vendor from "../../assets/vendor-circled.jpg"
-import supplier from "../../assets/supplier-circled.jpg"
-import customer from "../../assets/customer-circled.jpg"
+import vendor from "../../assets/avatars/vendor-circled.jpg"
+import supplier from "../../assets/avatars/supplier-circled.jpg"
+import customer from "../../assets/avatars/customer-circled.jpg"
 
 export default class extends Component {
   render () {
@@ -14,8 +14,8 @@ export default class extends Component {
       <div className="section section--use-case section__border-top" id="use-cases">
         <div className="container">
 
-          <Layout.Row gutter="60" style={{marginBottom: 100}} className="flex-reverse-mobile">
-            <Layout.Col sm="24" md="12" lg="12">
+          <Layout.Row gutter="60" style={{marginBottom: 100}} className="flex-reverse-mobile mobile-align-center">
+            <Layout.Col xs="24" sm="16" md="12" lg="12">
               <Fade top>
                 <h2 style={{marginBottom: 10}}>Vendor</h2>
                 <p style={{marginBottom: 30}}>
@@ -65,13 +65,13 @@ export default class extends Component {
 
           <hr style={{marginBottom: 100}}/>
 
-          <Layout.Row gutter="60" style={{marginBottom: 100}}>
+          <Layout.Row gutter="60" style={{marginBottom: 100}}  className="mobile-align-center">
             <Layout.Col sm="24" md="12" lg="12" className="just-center-mobile">
               <Flip right>
                 <img alt="vendor" src={supplier} />
               </Flip>
             </Layout.Col>
-            <Layout.Col sm="24" md="12" lg="12">
+            <Layout.Col xs="24" sm="16" md="12" lg="12">
               <Fade top>
                 <h2 style={{marginBottom: 10}}>Supplier</h2>
                 <p style={{marginBottom: 30}}>
@@ -124,8 +124,8 @@ export default class extends Component {
 
           <hr style={{marginBottom: 100}}/>
 
-          <Layout.Row gutter="60" className="flex-reverse-mobile">
-            <Layout.Col sm="24" md="12" lg="12">
+          <Layout.Row gutter="60" className="flex-reverse-mobile mobile-align-center">
+            <Layout.Col xs="24" sm="16" md="12" lg="12">
               <Fade top>
                 <h2 style={{marginBottom: 10}}>Customer</h2>
                 <p style={{marginBottom: 30}}>

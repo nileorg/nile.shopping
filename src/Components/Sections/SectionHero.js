@@ -3,16 +3,16 @@ import { Layout } from 'element-react'
 import { HashLink as Link } from 'react-router-hash-link'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../../assets/nile-hero-bg.jpg'
-import earth from '../../assets/earth.svg'
-import divider from '../../assets/nile-hero-divider__grey.svg'
-import caret from '../../assets/caret-down.svg'
+import hero from '../../assets/heros/home_hero.jpg'
+import earth from '../../assets/heros/earth.svg'
+import divider from '../../assets/heros/divider_grey.svg'
+import caret from '../../assets/icons/caret-down.svg'
 
 export default props =>
   <div className="section section--hero" id="hero" style={{backgroundImage: `url(${hero})`}}>
     <div className="container">
       <Layout.Row>
-        <Layout.Col className="" sm="24" md="12" lg="12">
+        <Layout.Col xs="24" sm="12" md="12" lg="12">
           <Fade top>
             <h1>Empowering local economies</h1>
             <p style={{marginBottom: 30}}>

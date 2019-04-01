@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../assets/imprint_hero.png'
-import divider from '../assets/nile-hero-divider.svg'
-import caret from '../assets/caret-left.svg'
+import hero from '../assets/heros/imprint_hero.png'
+import divider from '../assets/heros/divider.svg'
+import caret from '../assets/icons/caret-left.svg'
 
 export default class extends Component {
   render () {

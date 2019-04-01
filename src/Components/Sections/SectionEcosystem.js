@@ -3,9 +3,9 @@ import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
-import vendor from '../../assets/vendor-circled.jpg'
-import supplier from '../../assets/supplier-circled.jpg'
-import customer from '../../assets/customer-circled.jpg'
+import vendor from '../../assets/avatars/vendor-circled.jpg'
+import supplier from '../../assets/avatars/supplier-circled.jpg'
+import customer from '../../assets/avatars/customer-circled.jpg'
 
 export default props =>
   <div className="section section__light" id="ecosystem">

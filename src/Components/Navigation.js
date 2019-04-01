@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 import Slide from 'react-reveal/Slide'
 
 import '../styles/main-nav.scss'
-import logo from '../assets/logo_1.svg'
+import logo from '../assets/nile_logo.svg'
 import nile_typo from '../assets/nile_typo.svg'
 
 export default class extends Component {

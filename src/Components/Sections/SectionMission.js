@@ -3,9 +3,9 @@ import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
-import privacy from '../../assets/privacy.svg'
-import feeless from '../../assets/feeless.svg'
-import permissionless from '../../assets/permissionless.svg'
+import privacy from '../../assets/icons/privacy.svg'
+import feeless from '../../assets/icons/feeless.svg'
+import permissionless from '../../assets/icons/permissionless.svg'
 
 export default props =>
   <div className="section section__light section__border-top" id="mission">

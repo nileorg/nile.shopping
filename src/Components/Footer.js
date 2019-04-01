@@ -2,7 +2,7 @@ import React from "react"
 import { NavLink } from 'react-router-dom'
 
 import '../styles/footer.scss'
-import heart from '../assets/heart.svg'
+import heart from '../assets/icons/heart.svg'
 
 export default props =>
 

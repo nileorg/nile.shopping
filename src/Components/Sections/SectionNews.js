@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { Layout, Card } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import medium from "../../assets/medium.svg"
-import twitter from "../../assets/twitter.svg"
+import medium from "../../assets/icons/medium.svg"
+import twitter from "../../assets/icons/twitter.svg"
 
 export default class extends Component {
   state = {

@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react'
 import { Layout, Collapse } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../assets/vendor_hero.jpg'
-import divider from '../assets/nile-hero-divider.svg'
-import avatar from '../assets/vendor-circled.jpg'
+import hero from '../assets/heros/vendor_hero.jpg'
+import divider from '../assets/heros/divider.svg'
+import avatar from '../assets/avatars/vendor-circled.jpg'
 
 import dashboard from '../assets/mockups/dashboard.png'
 import product from '../assets/mockups/product.png'
