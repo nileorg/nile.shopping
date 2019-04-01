@@ -50,17 +50,9 @@ p {
   line-height: 1.5;
 }
 
-@media only screen and (max-width: 1200px ) {
-
-}
-
-@media only screen and (max-width: 992px ) {
-
-}
-
-@media only screen and (max-width: 768px ) {
-
-}
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
 
 @media only screen and (max-width: 520px) {
   h1 {
@@ -72,25 +64,4 @@ p {
   h3 {
     font-size: 24px;
   }
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--darker);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #69BAE8;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #4db3ff;
 }

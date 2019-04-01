@@ -1,5 +1,5 @@
 // ------------------------------------------
-//  B U T T O N   O V E R W R I T E S
+//  B U T T O N S
 // ------------------------------------------
 
 .el-button {
@@ -13,6 +13,6 @@
   letter-spacing: 0.05em;
   padding: 15px 40px;
   &--primary {
-    background-color: #69BAE8;
+    background-color: var(--primary);
   }
 }

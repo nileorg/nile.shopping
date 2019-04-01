@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 import { Layout } from 'element-react'
-import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade'
+import Flip from 'react-reveal/Flip'
 
 import vendor from '../../assets/avatars/vendor-circled.jpg'
 import supplier from '../../assets/avatars/supplier-circled.jpg'

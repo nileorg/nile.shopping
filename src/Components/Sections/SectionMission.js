@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 import { Layout } from 'element-react'
-import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade'
+import Flip from 'react-reveal/Flip'
 
 import privacy from '../../assets/icons/privacy.svg'
 import feeless from '../../assets/icons/feeless.svg'

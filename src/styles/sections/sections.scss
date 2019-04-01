@@ -1,0 +1,31 @@
+// ------------------------------------------
+//  B A S I C   S E C T I O N S
+// ------------------------------------------
+
+.section {
+  padding: 100px 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--white);
+  &__light {
+    background-color: #f5f8fa;
+  }
+  &__dark {
+    background-color: var(--dark);
+    color: var(--white);
+  }
+  &__border-top {
+    border-top: 1px solid rgba(0,0,0,.15);
+  }
+}
+
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
+
+@media only screen and (max-width: 520px) {
+  .section {
+    padding: 30px 0;
+  }
+}

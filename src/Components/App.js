@@ -1,14 +1,25 @@
 import React, { Component, Fragment } from 'react'
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import '../styles/variables.scss'
-import '../styles/animations.scss'
-import '../styles/helpers.scss'
-import '../styles/app.scss'
-import '../styles/buttons.scss'
-import '../styles/sections.scss'
-import '../styles/card.scss'
-import '../styles/accordion.scss'
+// D E F A U L T S
+import '../styles/defaults/variables.scss'
+import '../styles/defaults/typography.scss'
+import '../styles/defaults/helpers.scss'
+import '../styles/defaults/animations.scss'
+import '../styles/defaults/layout.scss'
+
+// E L E M E N T S
+import '../styles/elements/scrollbar.scss'
+import '../styles/elements/buttons.scss'
+import '../styles/elements/card.scss'
+import '../styles/elements/accordion.scss'
+
+// S E C T I O N S
+import '../styles/sections/sections.scss'
+import '../styles/sections/hero.scss'
+import '../styles/sections/showcase.scss'
+import '../styles/sections/use-case.scss'
+import '../styles/sections/news.scss'
 
 import Navigation from './Navigation'
 import SectionHero from './Sections/SectionHero'

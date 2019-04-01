@@ -1,9 +1,10 @@
+// ------------------------------------------
+//  E A R T H   A N I M A T I O N
+// ------------------------------------------
 
 .animation-target {
   animation: animation 1000ms linear both;
 }
-
-
 @keyframes animation {
   0% { transform: matrix3d(0.95, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
   4.7% { transform: matrix3d(0.972, 0, 0, 0, 0, 0.725, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
@@ -20,7 +21,12 @@
   100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+
+// ------------------------------------------
+//  R O T A T I O N S   F O R   L O G O
+// ------------------------------------------
+
+@-webkit-keyframes rotating {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -56,7 +62,7 @@
   animation: rotating 100s linear infinite;
 }
 
-@-webkit-keyframes rotation-1 /* Safari and Chrome */ {
+@-webkit-keyframes rotation-1 {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -68,7 +74,6 @@
     transform: rotate(360deg);
   }
 }
-
 .logo-rotation-1 {
   -webkit-animation: rotation-1 10s linear infinite;
   -moz-animation: rotation-1 10s linear infinite;
@@ -77,7 +82,7 @@
   animation: rotation-1 10s linear infinite;
 }
 
-@-webkit-keyframes rotation-2 /* Safari and Chrome */ {
+@-webkit-keyframes rotation-2 {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -89,7 +94,6 @@
     transform: rotate(360deg);
   }
 }
-
 .logo-rotation-2 {
   -webkit-animation: rotation-2 8s linear infinite;
   -moz-animation: rotation-2 8s linear infinite;
@@ -98,8 +102,7 @@
   animation: rotation-2 8s linear infinite;
 }
 
-
-@-webkit-keyframes rotation-3 /* Safari and Chrome */ {
+@-webkit-keyframes rotation-3 {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -111,7 +114,6 @@
     transform: rotate(360deg);
   }
 }
-
 .logo-rotation-3 {
   -webkit-animation: rotation-3 6s linear infinite;
   -moz-animation: rotation-3 6s linear infinite;
@@ -120,9 +122,7 @@
   animation: rotation-3 6s linear infinite;
 }
 
-
-
-@-webkit-keyframes rotation-4 /* Safari and Chrome */ {
+@-webkit-keyframes rotation-4 {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -134,7 +134,6 @@
     transform: rotate(360deg);
   }
 }
-
 .logo-rotation-4 {
   -webkit-animation: rotation-4 4s linear infinite;
   -moz-animation: rotation-4 4s linear infinite;

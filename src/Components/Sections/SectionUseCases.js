@@ -1,12 +1,12 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 import { Layout, Collapse } from 'element-react'
 import { NavLink } from 'react-router-dom'
 import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'
 
-import vendor from "../../assets/avatars/vendor-circled.jpg"
-import supplier from "../../assets/avatars/supplier-circled.jpg"
-import customer from "../../assets/avatars/customer-circled.jpg"
+import vendor from '../../assets/avatars/vendor-circled.jpg'
+import supplier from '../../assets/avatars/supplier-circled.jpg'
+import customer from '../../assets/avatars/customer-circled.jpg'
 
 export default class extends Component {
   render () {

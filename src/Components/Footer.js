@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import '../styles/footer.scss'
+import '../styles/navigation/footer.scss'
 import heart from '../assets/icons/heart.svg'
 
 export default props =>

@@ -1,0 +1,64 @@
+// ------------------------------------------
+//  S E C T I O N   U S E   C A S E
+// ------------------------------------------
+
+.section--use-case {
+  color: var(--dark);
+  img {
+    border-radius: 100%;
+    width: 500px;
+  }
+  hr {
+    border-color: rgba(0,0,0,.05);
+  }
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
+
+@media only screen and (max-width: 1200px ) {
+  .section--use-case {
+    img {
+      width: 400px;
+    }
+    .el-row {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px ) {
+  .section--use-case {
+    img {
+      width: 300px;
+      margin-bottom: 50px;
+    }
+    .el-row {
+      display: flex;
+      flex-direction: column;
+      .just-center-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .button-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .el-button--primary {
+        margin-bottom: 30px;
+      }
+      .el-button {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

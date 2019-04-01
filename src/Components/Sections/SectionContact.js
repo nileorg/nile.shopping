@@ -1,8 +1,8 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 import { Layout } from 'element-react'
-import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade'
 
-import icon from "../../assets/icons/discord.svg"
+import icon from '../../assets/icons/discord.svg'
 
 export default class extends Component {
   render () {

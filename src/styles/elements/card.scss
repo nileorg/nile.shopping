@@ -8,6 +8,7 @@
   border-radius: 10px;
   border: 3px solid rgba(0,0,0,.15);
   color: var(--dark);
+  text-decoration: none;
   img {
     height: 180px;
   }
@@ -19,18 +20,14 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
-
-}
-
-.medium-card {
-  text-decoration: none;
-  color: var(--dark);
 }
 
 .el-card {
   border: 3px solid rgba(0,0,0,.15);
   box-shadow: none;
   border-radius: 10px;
+  color: var(--dark);
+  text-decoration: none;
   img {
     width: 100%;
   }
@@ -47,41 +44,12 @@
   }
 }
 
-.twitter-timeline {
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,.15) !important;
-}
-
-.sm-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sm-icon-bg {
-  height: 200px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
 // ------------------------------------------
 //  M O B I L E
 // ------------------------------------------
-
-@media only screen and (max-width: 1260px ) {
-
-}
 
 @media only screen and (max-width: 992px ) {
   .card {
     margin-bottom: 30px;
   }
-}
-
-@media only screen and (max-width: 600px ) {
-
-}
-
-@media only screen and (max-width: 599px) {
-
 }

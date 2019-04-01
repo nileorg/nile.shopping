@@ -1,3 +1,7 @@
+// ------------------------------------------
+//  A C C O R D I O N
+// ------------------------------------------
+
 .el-collapse {
   border: none;
   margin-left: 40px;
@@ -48,16 +52,20 @@
   }
 }
 
-@media only screen and (max-width: 992px ) {
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
+
+@media only screen and (max-width: 992px) {
   .el-collapse-item__header {
-      h4 {
-        width: 100%;
-        font-size: 20px;
-        line-height: 1.2;
-        margin-bottom: 0;
-        .counter {
-          top: 0;
-        }
+    h4 {
+      width: 100%;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 0;
+      .counter {
+        top: 0;
       }
+    }
   }
 }

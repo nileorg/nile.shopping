@@ -1,3 +1,8 @@
+// ------------------------------------------
+//  A P P   N A V I G A T I O N
+//  Used in /app/vendor, /app/customer, /app/
+// ------------------------------------------
+
 .app-nav {
   position: fixed;
   top: 50px;
@@ -67,9 +72,9 @@
   }
 }
 
-@media only screen and (max-width: 1200px ) {
-
-}
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
 
 @media only screen and (max-width: 992px ) {
   .app-nav {
@@ -77,10 +82,6 @@
     left: 30px;
     width: calc(100% - 60px);
   }
-}
-
-@media only screen and (max-width: 768px ) {
-
 }
 
 @media only screen and (max-width: 568px) {
