@@ -87,6 +87,52 @@
     100% { transform: translateY(5px); }
 }
 
+.section--hero__sm {
+  height: 600px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  .container {
+    position: relative;
+    z-index: 2;
+    .avatar-container {
+      width: 350px;
+      background-color: white;
+      border-radius: 200px 200px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      padding-bottom: 0;
+      box-sizing: border-box;
+      img {
+        width: 250px;
+      }
+    }
+  }
+  &.resized {
+
+  }
+}
+
+.section--showcase {
+  height: 890px;
+  border-top: 1px solid rgba(0,0,0,.15);
+  .mockup {
+    position: absolute;
+    left: -170px;
+    height: 690px;
+    &--right {
+      left: auto;
+      right: -170px;
+    }
+  }
+  .container, .el-row  {
+    position: static;
+  }
+
+}
+
 // ------------------------------------------
 //  S E C T I O N   U S E   C A S E
 // ------------------------------------------

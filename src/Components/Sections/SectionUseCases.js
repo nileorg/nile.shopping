@@ -1,7 +1,8 @@
 import React, { Component } from "react"
 import { Layout, Collapse } from 'element-react'
-import Fade from 'react-reveal/Fade';
-import Flip from 'react-reveal/Flip';
+import { NavLink } from 'react-router-dom'
+import Fade from 'react-reveal/Fade'
+import Flip from 'react-reveal/Flip'
 
 import vendor from "../../assets/vendor-circled.jpg"
 import supplier from "../../assets/supplier-circled.jpg"
@@ -43,10 +44,11 @@ export default class extends Component {
                   </Collapse.Item>
                 </Collapse>
                 <div style={{marginTop: 50}}>
-                  <button
+                  <NavLink
+                    to="/app/vendor"
                     className="el-button el-button--primary">
                     Discover more
-                  </button>
+                  </NavLink>
                   <button
                     className="el-button el-button">
                     Try Prototype
@@ -98,10 +100,11 @@ export default class extends Component {
                   </Collapse.Item>
                 </Collapse>
                 <div style={{marginTop: 50}}>
-                  <button
+                  <NavLink
+                    to="/app/supplier"
                     className="el-button el-button--primary">
                     Discover more
-                  </button>
+                  </NavLink>
                   <button
                     className="el-button el-button">
                     Try Prototype
@@ -144,10 +147,11 @@ export default class extends Component {
                   </Collapse.Item>
                 </Collapse>
                 <div style={{marginTop: 50}}>
-                  <button
+                  <NavLink
+                    to="/app/customer"
                     className="el-button el-button--primary">
                     Discover more
-                  </button>
+                  </NavLink>
                   <button
                     className="el-button el-button">
                     Try Prototype

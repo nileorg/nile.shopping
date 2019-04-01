@@ -34,16 +34,16 @@ export default props =>
     <div className="earth-wrapper animation-target">
       <img alt="earth" src={earth} className="earth rotating" />
     </div>
-      <div className="hero-divider">
-        <Link
-          to="#ecosystem"
-          scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-          className="scroll-down"
-          style={{color: '#ffffff', textDecoration: 'none'}}
-          >
-            <span>Scroll down</span>
-            <img alt="caret" src={caret} className="caret" />
-        </Link>
-        <img alt="divider" src={divider} className="divider"/>
-      </div>
+    <div className="hero-divider">
+      <Link
+        to="#ecosystem"
+        scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+        className="scroll-down"
+        style={{color: '#ffffff', textDecoration: 'none'}}
+        >
+          <span>Scroll down</span>
+          <img alt="caret" src={caret} className="caret" />
+      </Link>
+      <img alt="divider" src={divider} className="divider"/>
+    </div>
   </div>

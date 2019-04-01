@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { BrowserRouter, Route } from "react-router-dom"
+import React, { Component, Fragment } from 'react'
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 import '../styles/variables.scss'
 import '../styles/helpers.scss'
@@ -18,44 +18,54 @@ import SectionNews from './Sections/SectionNews'
 import SectionContact from './Sections/SectionContact'
 import Footer from './Footer'
 
-export default class extends Component {
-  state = {
-    latest_article: {},
-    isLoading: false,
-    error: null,
-  }
+import AppNavigation from './AppNavigation'
 
-  componentDidMount() {
-    this.setState({ isLoading: true });
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/nile-shopping')
-       .then((res) => res.json())
-       .then((data) => {
-         const res = data.items
-         const _articles = res.filter(item => item.categories.length > 0)
-         this.setState({
-            latest_article: _articles[0],
-            isLoading: false
-          })
-        })
-    }
+import VendorHome from './VendorHome'
+import SupplierHome from './SupplierHome'
+import CustomerHome from './CustomerHome'
+
+class App extends Component {
 
   render() {
-
     return (
       <div className="app">
         <BrowserRouter>
-          <Route path='/' component={Navigation} />
-
-          <SectionHero />
-          <SectionEcosystem />
-          <SectionUseCases />
-          <SectionMission />
-          <SectionNews articles={this.state.latest_article} />
-          <SectionContact />
-
-          <Footer />
+          <Switch>
+            <Route exact
+              path='/'
+              component={HomeContainer}
+            />
+            <Route path='/app' component={AppContainer} />
+          </Switch>
         </BrowserRouter>
       </div>
     )
   }
 }
+
+const HomeContainer = (props) => (
+  <Fragment>
+    <Route path='/' component={Navigation} />
+
+    <SectionHero />
+    <SectionEcosystem />
+    <SectionUseCases />
+    <SectionMission />
+
+    <SectionNews />
+    <SectionContact />
+
+    <Footer />
+  </Fragment>
+)
+
+const AppContainer = (props) => (
+  <Fragment>
+    <Route path='/app' component={AppNavigation} />
+    <Route path='/app/vendor' component={VendorHome} exact />
+    <Route path='/app/supplier' component={SupplierHome} exact />
+    <Route path='/app/customer' component={CustomerHome} exact />
+  </Fragment>
+)
+
+export default App

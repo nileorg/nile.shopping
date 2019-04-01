@@ -7,8 +7,28 @@ import medium from "../../assets/medium.svg"
 import twitter from "../../assets/twitter.svg"
 
 export default class extends Component {
+  state = {
+    latest_article: {},
+    isLoading: false,
+    error: null,
+  }
+
+  componentDidMount() {
+    this.setState({ isLoading: true });
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/nile-shopping')
+       .then((res) => res.json())
+       .then((data) => {
+         const res = data.items
+         const _articles = res.filter(item => item.categories.length > 0)
+         this.setState({
+            latest_article: _articles[0],
+            isLoading: false
+          })
+        })
+    }
+
   render () {
-    const article = this.props.articles
+    const article = this.state.latest_article
     return (
       <div className="section" id="news">
         <div className="container">
@@ -27,7 +47,7 @@ export default class extends Component {
           <Layout.Row gutter="60" style={{marginBottom: 50}}>
             <Layout.Col span="12">
               <div className="sm-container">
-                <Flip left>
+                <Fade left>
                   <img className="sm-icon-bg" alt="Medium" src={medium} />
                   <a
                     href="https://medium.com/nile-shopping"
@@ -46,12 +66,12 @@ export default class extends Component {
                       </div>
                     </Card>
                   </a>
-                </Flip>
+                </Fade>
               </div>
             </Layout.Col>
             <Layout.Col span="12">
               <div className="sm-container">
-                <Flip right>
+                <Fade right>
                   <img className="sm-icon-bg" alt="Discord" src={twitter} />
                   <a
                     href="https://twitter.com/nile_org"
@@ -68,22 +88,9 @@ export default class extends Component {
                     data-widget-id="0000000000"
                     data-tweet-limit="1">Latest tweet
                   </a>
-                </Flip>
+                </Fade>
               </div>
             </Layout.Col>
-          </Layout.Row>
-
-          <Layout.Row gutter="60">
-            <Fade left>
-              <Layout.Col  span="12">
-
-              </Layout.Col>
-            </Fade>
-            <Fade right>
-              <Layout.Col span="12">
-              </Layout.Col>
-            </Fade>
-
           </Layout.Row>
         </div>
 
