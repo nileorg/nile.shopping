@@ -1,8 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="195" height="195" viewBox="0 0 195 195">
-  <title>medium</title>
-  <g id="Layer_2" data-name="Layer 2">
-    <g id="Layer_1-2" data-name="Layer 1">
-      <path d="M0,0V195H195V0ZM162,46.2l-10.46,10a3,3,0,0,0-1.16,2.93v73.68a3,3,0,0,0,1.16,2.93l10.22,10V148H110.38v-2.2L121,135.53c1-1,1-1.35,1-2.94V73L92.59,147.76h-4L54.36,73v50.08a6.92,6.92,0,0,0,1.9,5.74L70,145.55v2.21H31v-2.21l13.76-16.69a6.64,6.64,0,0,0,1.77-5.74V65.22a5.05,5.05,0,0,0-1.65-4.28L32.65,46.2V44h38L100,108.38,125.79,44H162Z" style="fill: #fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258.094" height="258.094" viewBox="0 0 258.094 258.094">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1064" data-name="Rectangle 1064" width="220.553" height="220.553" rx="27" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1110" data-name="Group 1110" transform="translate(-515.598 -3593.87)">
+    <rect id="Rectangle_1062" data-name="Rectangle 1062" width="258.094" height="258.094" rx="32" transform="translate(515.598 3593.87)" fill="#dbdbdb"/>
+    <rect id="Rectangle_1063" data-name="Rectangle 1063" width="173.627" height="173.627" rx="7" transform="translate(557.83 3636.104)" fill="#0a1516" opacity="0.5"/>
+    <g id="Mask_Group_11" data-name="Mask Group 11" transform="translate(534.074 3612.641)" clip-path="url(#clip-path)">
+      <g id="medium_dark.e8d007ca-1">
+        <g id="Layer_1-2">
+          <path id="Path_1255" data-name="Path 1255" d="M0,0V220.553H220.553V0ZM183.229,52.254l-11.876,11.31A3.423,3.423,0,0,0,170,66.844V150.2a3.331,3.331,0,0,0,1.357,3.28l11.537,11.31v2.6H124.754v-2.488l11.989-11.65c1.131-1.131,1.131-1.583,1.131-3.28V82.566l-33.253,84.6H100.1l-38.568-84.6v56.665a7.576,7.576,0,0,0,2.149,6.447l15.5,19v2.488H35.062V164.68l15.608-18.888a7.611,7.611,0,0,0,2.036-6.447v-65.6a5.44,5.44,0,0,0-1.923-4.863l-13.8-16.626V49.766h42.98L113.1,122.6l29.181-72.839h40.944Z" fill="#fff"/>
+        </g>
+      </g>
     </g>
   </g>
 </svg>

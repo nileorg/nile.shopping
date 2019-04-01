@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route } from "react-router-dom"
 
 import '../styles/variables.scss'
 import '../styles/helpers.scss'
@@ -10,8 +10,10 @@ import '../styles/card.scss'
 
 import Navigation from './Navigation'
 import SectionHero from './Sections/SectionHero'
+
 import SectionEcosystem from './Sections/SectionEcosystem'
 import SectionUseCases from './Sections/SectionUseCases'
+import SectionMission from './Sections/SectionMission'
 import SectionNews from './Sections/SectionNews'
 import SectionContact from './Sections/SectionContact'
 import Footer from './Footer'
@@ -47,6 +49,7 @@ export default class extends Component {
           <SectionHero />
           <SectionEcosystem />
           <SectionUseCases />
+          <SectionMission />
           <SectionNews articles={this.state.latest_article} />
           <SectionContact />
 

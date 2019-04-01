@@ -1,5 +1,4 @@
 import React from "react"
-import { Layout } from 'element-react'
 
 import '../styles/footer.scss'
 import heart from '../assets/heart.svg'

@@ -2,12 +2,12 @@ import React, { Component } from "react"
 import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade';
 
-import icon from "../../assets/discord_dark.svg"
+import icon from "../../assets/discord.svg"
 
 export default class extends Component {
   render () {
     return (
-      <div className="section" id="contact">
+      <div className="section section__light" id="contact">
         <div className="container">
           <Layout.Row type="flex" justify="center" >
             <Layout.Col span="12" className="center">

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
-import { NavLink } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
-import Slide from 'react-reveal/Slide';
+import Slide from 'react-reveal/Slide'
 
 import '../styles/main-nav.scss'
 import logo from '../assets/logo_1.svg'
@@ -30,12 +29,10 @@ export default class extends Component {
   }
 
   render () {
-    console.log(this.props.location.hash);
     return (
       <Slide top>
-
         <nav className={`main-nav ${this.state.activeClass}`}>
-          <Link smooth to="#hero" className={`${this.props.location.hash === '#hero' ? 'active' : ''} nav-item nav-item--logo`} activeClassName="active">
+          <Link smooth to="#hero" className={`${this.props.location.hash === '#hero' ? 'active' : ''} nav-item nav-item--logo`}>
             <div className="logo-wrapper">
               <img alt="nile" className="logo logo-rotation-1" src={logo} />
               <img alt="nile" className="logo logo-rotation-2" src={logo} />
