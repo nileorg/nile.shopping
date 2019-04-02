@@ -9,14 +9,14 @@
   overflow: hidden;
   background-color: var(--white);
   &__light {
-    background-color: #f5f8fa;
+    background-color: var(--light);
   }
   &__dark {
     background-color: var(--dark);
     color: var(--white);
   }
   &__border-top {
-    border-top: 1px solid rgba(0,0,0,.15);
+    border-top: var(--border-sm_dark);
   }
 }
 

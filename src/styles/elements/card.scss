@@ -3,10 +3,10 @@
 // ------------------------------------------
 
 .card {
-  background-color: var(--white);
   padding: 30px;
+  background-color: var(--white);
+  border: var(--border-lg);
   border-radius: 10px;
-  border: 3px solid rgba(0,0,0,.15);
   color: var(--dark);
   text-decoration: none;
   img {
@@ -23,11 +23,12 @@
 }
 
 .el-card {
-  border: 3px solid rgba(0,0,0,.15);
+  border: var(--border-lg);
+  border-radius: var(--border-radius);
   box-shadow: none;
-  border-radius: 10px;
   color: var(--dark);
   text-decoration: none;
+  transition: var(--transition-200);
   img {
     width: 100%;
   }
@@ -37,7 +38,7 @@
     padding: 15px 20px 20px 20px;
   }
   &:hover {
-    background-color: #f5f8fa;
+    background-color: var(--light);
   }
   .active {
     margin-top: 100px;

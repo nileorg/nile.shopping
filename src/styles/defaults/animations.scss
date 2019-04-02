@@ -21,6 +21,18 @@
   100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
 
+// ------------------------------------------
+//  S C R O L L   D O W N   C A R E T  
+// ------------------------------------------
+
+@-webkit-keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(5px); }
+}
+@keyframes MoveUpDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(5px); }
+}
 
 // ------------------------------------------
 //  R O T A T I O N S   F O R   L O G O

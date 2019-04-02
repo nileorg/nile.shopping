@@ -54,7 +54,7 @@ export default props =>
               <img alt="permissionless" src={permissionless}/>
               <h3>Permissionless</h3>
               <p>Everyone can join the system without any registration hurdles.
-              Even when you are signed in your can interact anonymously with other
+              Even when you are signed in you can interact anonymously with other
               people in your ecosystem.</p>
             </div>
           </Flip>

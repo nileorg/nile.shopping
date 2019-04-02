@@ -1,10 +1,11 @@
 // ------------------------------------------
-//  S E C T I O N   N E W S 
+//  S E C T I O N   N E W S
 // ------------------------------------------
 
 .twitter-timeline {
-  border-radius: 10px;
-  border: 1px solid rgba(0,0,0,.15) !important;
+  border-radius: 10px !important;
+  border: var(--border-lg) !important;
+  overflow: hidden;
 }
 
 .sm-container {
@@ -15,6 +16,6 @@
 
 .sm-icon-bg {
   height: 200px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   margin-bottom: 30px;
 }

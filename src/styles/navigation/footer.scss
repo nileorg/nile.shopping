@@ -1,16 +1,16 @@
 footer {
-  background-color: var(--dark);
-  color: var(--white);
-  padding: 20px;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--dark);
+  color: var(--white);
   a {
     display: flex;
+    align-items: center;
     color: var(--white_50);
     text-decoration: none;
-    align-items: center;
-    transition: all 300ms ease-in-out;
+    transition: var(--transition-200);
     &:hover {
       color: var(--white);
     }

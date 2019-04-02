@@ -1,5 +1,6 @@
 import React from 'react'
 import { Layout } from 'element-react'
+import { HashLink as Link } from 'react-router-hash-link'
 import Fade from 'react-reveal/Fade'
 import Flip from 'react-reveal/Flip'
 
@@ -38,11 +39,12 @@ export default props =>
                 think of usual people selling art, honey and services they do
                 hobby wise.
               </p>
-              <button
-                style={{marginTop: 30}}
-                className="el-button el-button--primary">
-                Read more
-              </button>
+              <Link
+                to="#use-cases"
+                scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                className="el-button el-button--primary"
+                style={{marginTop: 30}}>Read more
+              </Link>
             </div>
           </Flip>
         </Layout.Col>
@@ -57,11 +59,12 @@ export default props =>
                 way the delivery is not just very efficient since there are
                 almost no extra miles, the supplier also get rewards on the fly.
               </p>
-              <button
-                style={{marginTop: 30}}
-                className="el-button el-button--primary">
-                Read more
-              </button>
+              <Link
+                to="#supplier"
+                scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                className="el-button el-button--primary"
+                style={{marginTop: 30}}>Read more
+              </Link>
             </div>
           </Flip>
         </Layout.Col>
@@ -77,11 +80,12 @@ export default props =>
                 cooperations has the potential to transform the awareness into
                 action.
               </p>
-              <button
-                style={{marginTop: 30}}
-                className="el-button el-button--primary">
-                Read more
-              </button>
+              <Link
+                to="#customer"
+                scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                className="el-button el-button--primary"
+                style={{marginTop: 30}}>Read more
+              </Link>
             </div>
           </Flip>
         </Layout.Col>

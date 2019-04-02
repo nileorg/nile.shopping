@@ -63,7 +63,7 @@ export default class extends Component {
             </Layout.Col>
           </Layout.Row>
 
-          <hr style={{marginBottom: 100}}/>
+          <hr id="supplier" style={{marginBottom: 100}}/>
 
           <Layout.Row gutter="60" style={{marginBottom: 100}}  className="mobile-align-center">
             <Layout.Col sm="24" md="12" lg="12" className="just-center-mobile">
@@ -122,7 +122,7 @@ export default class extends Component {
             </Layout.Col>
           </Layout.Row>
 
-          <hr style={{marginBottom: 100}}/>
+          <hr id="customer" style={{marginBottom: 100}}/>
 
           <Layout.Row gutter="60" className="flex-reverse-mobile mobile-align-center">
             <Layout.Col xs="24" sm="16" md="12" lg="12">
