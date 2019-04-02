@@ -9,7 +9,12 @@ import supplier from '../../assets/avatars/supplier-circled.jpg'
 import customer from '../../assets/avatars/customer-circled.jpg'
 
 export default class extends Component {
+  scrollTop () {
+    console.log("Scroll top");
+    window.scrollTo(0, 0)
+  }
   render () {
+
     return (
       <div className="section section--use-case section__border-top" id="use-cases">
         <div className="container">
@@ -46,6 +51,7 @@ export default class extends Component {
                 <div className="button-wrapper" style={{marginTop: 50}}>
                   <NavLink
                     to="/app/vendor"
+                    onClick={this.scrollTop}
                     className="el-button el-button--primary">
                     Discover more
                   </NavLink>
@@ -110,6 +116,7 @@ export default class extends Component {
                 <div className="button-wrapper" style={{marginTop: 50}}>
                   <NavLink
                     to="/app/supplier"
+                    onClick={this.scrollTop}
                     className="el-button el-button--primary">
                     Discover more
                   </NavLink>
@@ -157,6 +164,7 @@ export default class extends Component {
                 <div className="button-wrapper" style={{marginTop: 50}}>
                   <NavLink
                     to="/app/customer"
+                    onClick={this.scrollTop}
                     className="el-button el-button--primary">
                     Discover more
                   </NavLink>
