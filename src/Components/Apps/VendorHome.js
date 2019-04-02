@@ -6,11 +6,11 @@ import hero from '../../assets/heros/vendor_hero.jpg'
 import divider from '../../assets/heros/divider.svg'
 import avatar from '../../assets/avatars/vendor-circled.jpg'
 
-import dashboard from '../../assets/mockups/dashboard.png'
-import product from '../../assets/mockups/product.png'
-import order from '../../assets/mockups/order.png'
-import cashier from '../../assets/mockups/cashier.png'
-import settings from '../../assets/mockups/settings.png'
+import dashboard from '../../assets/mockups/dashboard.jpg'
+import product from '../../assets/mockups/product.jpg'
+import order from '../../assets/mockups/order.jpg'
+import cashier from '../../assets/mockups/cashier.jpg'
+import settings from '../../assets/mockups/settings.jpg'
 
 export default class extends Component {
   render () {
