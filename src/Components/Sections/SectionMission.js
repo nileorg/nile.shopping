@@ -15,12 +15,15 @@ export default props =>
           <Fade top>
             <h2>Mission</h2>
             <p>Nile’s mission is to provide local economies with tools to compete
-            with the global economy. Today, global monopolies are putting local
-            economies at risk, by offering better and faster services.People are
-            buying more from the same global seller instead of pursuing the ethical
-            and sustainable choice of supporting local markets. It is time for Nile
-            and those who share our mission to develop a plan to stand up for a new
-            open and free set of tools to promote local economies.
+            with global giants. Today, global monopolies are putting local
+            economies at risk, by offering better and faster services. People are
+            buying almost everything from some global giants instead of supporting
+            local markets. We deply believe that this can and has to be changed
+            by ourselves, the usual people. It is time for Nile and those who
+            share our mission to design a better way of commerce for a better
+            tomorrow. We invite everybody out there that shares our mission and
+            believes to stand up for an open and free set of tools to promote
+            local economies.
             </p>
           </Fade>
         </Layout.Col>

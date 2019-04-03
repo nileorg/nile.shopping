@@ -54,12 +54,8 @@ export default class extends Component {
                     to="/app/vendor"
                     onClick={this.scrollTop}
                     className="el-button el-button--primary">
-                    Discover more
+                    Discover the app
                   </NavLink>
-                  <button
-                    className="el-button el-button">
-                    Try Prototype
-                  </button>
                 </div>
               </Fade>
             </Layout.Col>
@@ -93,23 +89,23 @@ export default class extends Component {
                 <Collapse accordion value="0">
                   <Collapse.Item
                     title={<h4><span className="counter">1</span>Pick up packages on your path</h4>}>
-                    <div>Whenever you drive from one place to another you can
-                    enter your path and see where you can pickup packages</div>
+                    <div>Whenever someone drive from one place to another he or she
+                    can enter their route and see where they can pickup packages</div>
                   </Collapse.Item>
                   <Collapse.Item
                     title={<h4><span className="counter">2</span>Guided delivery</h4>}>
-                    <div>As soon as you picked up the packages you will be guided
-                    to your target locations.</div>
+                    <div>As soon as a supplier picked up the packages he or she
+                    will be guided to the target locations.</div>
                   </Collapse.Item>
                   <Collapse.Item
                     title={<h4><span className="counter">3</span>Earn rewards</h4>}>
-                    <div>By delivering packages to customers you earn some money
-                    for the delivery.</div>
+                    <div>By delivering packages to customers suppliers earn real
+                    money for the delivery.</div>
                   </Collapse.Item>
                   <Collapse.Item
                     title={<h4><span className="counter">4</span>Find buddies</h4>}>
                     <div>Especially older generations rely on people that bring
-                    their products right at their door. You can enter fixed
+                    their products right at their door. Suppliers can enter fixed
                     relationships with people to help them whenever they need
                     something.</div>
                   </Collapse.Item>
@@ -119,12 +115,8 @@ export default class extends Component {
                     to="/app/supplier"
                     onClick={this.scrollTop}
                     className="el-button el-button--primary">
-                    Discover more
+                    Discover the app
                   </NavLink>
-                  <button
-                    className="el-button el-button">
-                    Try Prototype
-                  </button>
                 </div>
               </Fade>
             </Layout.Col>
@@ -148,8 +140,8 @@ export default class extends Component {
               <Fade left>
                 <Collapse accordion value="0">
                   <Collapse.Item title={<h4><span className="counter">1</span>Discover your neighborhood</h4>} >
-                    <div>You can find businesses and people offering products and
-                    services right in your neighborhood.</div>
+                    <div>Customers can find businesses and people offering products
+                    and services right in their neighborhood.</div>
                   </Collapse.Item>
                   <Collapse.Item title={<h4><span className="counter">2</span>Delivery at your home</h4>}>
                     <div>Many local businesses that currently cannot offer delivery
@@ -157,9 +149,9 @@ export default class extends Component {
                     platform.</div>
                   </Collapse.Item>
                   <Collapse.Item title={<h4><span className="counter">3</span>Recurring orders</h4>}>
-                    <div>If you buy products frequently you can create recurring
-                    orders. They will be delivered automatically right at your
-                    door.</div>
+                    <div>If customers buy products frequently they can create
+                    recurring orders. They will be delivered automatically right
+                    at the customers door.</div>
                   </Collapse.Item>
                 </Collapse>
                 <div className="button-wrapper" style={{marginTop: 50}}>
@@ -167,12 +159,8 @@ export default class extends Component {
                     to="/app/customer"
                     onClick={this.scrollTop}
                     className="el-button el-button--primary">
-                    Discover more
+                    Discover the app
                   </NavLink>
-                  <button
-                    className="el-button el-button">
-                    Try Prototype
-                  </button>
                 </div>
               </Fade>
             </Layout.Col>
