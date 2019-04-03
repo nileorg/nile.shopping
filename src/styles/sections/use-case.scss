@@ -4,12 +4,9 @@
 
 .section--use-case {
   color: var(--dark);
-  img {
+  .circle {
     border-radius: 100%;
     width: 500px;
-  }
-  hr {
-    border-color: var(--black_5);
   }
   .flex-end {
     display: flex;
@@ -24,18 +21,15 @@
 
 @media only screen and (max-width: 1200px ) {
   .section--use-case {
-    img {
+    .circle {
       width: 400px;
-    }
-    .el-row {
-      display: flex;
     }
   }
 }
 
 @media only screen and (max-width: 992px ) {
   .section--use-case {
-    img {
+    .circle {
       width: 300px;
       margin-bottom: 50px;
     }
@@ -46,18 +40,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-    }
-    .button-wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      .el-button--primary {
-        margin-bottom: 30px;
-      }
-      .el-button {
-        margin-left: 0;
-        margin-bottom: 15px;
       }
     }
   }

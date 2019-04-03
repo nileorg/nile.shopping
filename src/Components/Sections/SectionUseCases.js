@@ -1,177 +1,105 @@
-import React, { Component } from 'react'
-import { Layout, Collapse } from 'element-react'
-import { NavLink } from 'react-router-dom'
-import Fade from 'react-reveal/Fade'
-import Flip from 'react-reveal/Flip'
+import React, { Component, Fragment } from 'react'
 
-import vendor from '../../assets/avatars/vendor-circled.jpg'
-import supplier from '../../assets/avatars/supplier-circled.jpg'
-import customer from '../../assets/avatars/customer-circled.jpg'
+import UseCase from './UseCase'
 
 export default class extends Component {
-  scrollTop () {
-    console.log("Scroll top");
-    window.scrollTo(0, 0)
-  }
   render () {
+    const vendorData = {
+      id: 'vendor',
+      border: true,
+      background: 'white',
+      image_type: 'circle',
+      image_path: './assets/vendor-circled.jpg',
+      image_right: true,
+      title: 'Vendor',
+      description: "People willing to sell something. There are many different businesses and people that are already selling products or services, but many of them does not have the capacities nor the money to conquer the web and there might also be even more people that have the potential but not yet the platform to do so.",
+      button: true,
+      link_to: '/app/vendor',
+      button_text: 'Discover the app',
+      items: [
+        {
+          title: 'Get started',
+          description: 'Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.'
+        },
+        {
+          title: 'Stock Management',
+          description: 'Everytime the vendor gets new deliveries or produces new products he needs to update his stock.'
+        },
+        {
+          title: 'Order Management',
+          description: 'Each time a customer buys a product that is supposed to be delivered to him, an order gets created. The order needs to be packed when the customer has payed and needs to be handed over when a supplier wants to pick it up.'
+        },
+        {
+          title: 'Cashier System',
+          description: 'Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.'
+        }
+      ]
+    }
+    const supplierData = {
+      id: 'supplier',
+      border: true,
+      background: 'white',
+      image_type: 'circle',
+      image_path: './assets/supplier-circled.jpg',
+      image_right: false,
+      title: 'Supplier',
+      description: "People willing to ship something. Shipping products from one place to another is mostly done by corporations right now. Instead we could use the potential of usual people that drive around every day. They simply could pick up packages on their path and deliver it to the target location.",
+      button: true,
+      link_to: '/app/supplier',
+      button_text: 'Discover the app',
+      items: [
+        {
+          title: 'Pick up packages on your path',
+          description: 'Whenever someone drive from one place to another he or she can enter their route and see where they can pickup packages',
+        },
+        {
+          title: 'Guided delivery',
+          description: 'As soon as a supplier picked up the packages he or she will be guided to the target locations.',
+        },
+        {
+          title: 'Earn rewards',
+          description: 'By delivering packages to customers suppliers earn real money for the delivery.',
+        },
+        {
+          title: 'Find buddies',
+          description: 'Especially older generations rely on people that bring their products right at their door. Suppliers can enter fixed relationships with people to help them whenever they need something.'
+        }
+      ]
+    }
+    const customerData = {
+      id: 'customer',
+      border: true,
+      background: 'white',
+      image_type: 'circle',
+      image_path: './assets/customer-circled.jpg',
+      image_right: true,
+      title: 'Customer',
+      description: "More and more people get aware of the importance of local economies. They see how many local businesses needs to close, but do not want to be without the service quality of platforms like amazon. Empowering people with a platform to have the same service quality but supporting local products and services has the potential to transform the awareness into real world action.",
+      button: true,
+      link_to: '/app/customer',
+      button_text: 'Discover the app',
+      items: [
+        {
+          title: 'Discover your neighborhood',
+          description: 'Customers can find businesses and people offering products and services right in their neighborhood.'
+        },
+        {
+          title: 'Delivery at your home',
+          description: 'Many local businesses that currently cannot offer delivery services will be able to deal with delivery by using the Nile platform.'
+        },
+        {
+          title: 'Recurring orders',
+          description: 'If customers buy products frequently they can create recurring orders. They will be delivered automatically right at the customers door.'
+        }
+      ]
+    }
 
     return (
-      <div className="section section--use-case section__border-top" id="use-cases">
-        <div className="container">
-
-          <Layout.Row gutter="60" style={{marginBottom: 100}} className="flex-reverse-mobile mobile-align-center">
-            <Layout.Col xs="24" sm="16" md="12" lg="12">
-              <Fade top>
-                <h2 style={{marginBottom: 10}}>Vendor</h2>
-                <p style={{marginBottom: 30}}>
-                  People willing to sell something. There are many different
-                  businesses and people that are already selling products or
-                  services, but many of them does not have the capacities nor the
-                  money to conquer the web and there might also be even more
-                  people that have the potential but not yet the platform to do so.
-                </p>
-              </Fade>
-              <Fade left>
-                <Collapse accordion value="0">
-                  <Collapse.Item title={<h4><span className="counter">1</span>Get started</h4>} >
-                    <div>Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<h4><span className="counter">2</span>Stock Management</h4>}>
-                    <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
-                    <div>Each time a customer buys a product that is supposed to be
-                    delivered to him, an order gets created. The order needs to
-                    be packed when the customer has payed and needs to be handed
-                    over when a supplier wants to pick it up.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
-                    <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
-                  </Collapse.Item>
-                </Collapse>
-                <div className="button-wrapper" style={{marginTop: 50}}>
-                  <NavLink
-                    to="/app/vendor"
-                    onClick={this.scrollTop}
-                    className="el-button el-button--primary">
-                    Discover the app
-                  </NavLink>
-                </div>
-              </Fade>
-            </Layout.Col>
-            <Layout.Col sm="24" md="12" lg="12" className="flex-end just-center-mobile">
-              <Flip left>
-                <img alt="vendor" src={vendor} />
-              </Flip>
-            </Layout.Col>
-          </Layout.Row>
-
-          <hr id="supplier" style={{marginBottom: 100}}/>
-
-          <Layout.Row gutter="60" style={{marginBottom: 100}}  className="mobile-align-center">
-            <Layout.Col sm="24" md="12" lg="12" className="just-center-mobile">
-              <Flip right>
-                <img alt="vendor" src={supplier} />
-              </Flip>
-            </Layout.Col>
-            <Layout.Col xs="24" sm="16" md="12" lg="12">
-              <Fade top>
-                <h2 style={{marginBottom: 10}}>Supplier</h2>
-                <p style={{marginBottom: 30}}>
-                  People willing to ship something. Shipping products from one
-                  place to another is mostly done by corporations right now.
-                  Instead we could use the potential of usual people that drive
-                  around every day. They simply could pick up packages on their
-                  path and deliver it to the target location.
-                </p>
-              </Fade>
-              <Fade right>
-                <Collapse accordion value="0">
-                  <Collapse.Item
-                    title={<h4><span className="counter">1</span>Pick up packages on your path</h4>}>
-                    <div>Whenever someone drive from one place to another he or she
-                    can enter their route and see where they can pickup packages</div>
-                  </Collapse.Item>
-                  <Collapse.Item
-                    title={<h4><span className="counter">2</span>Guided delivery</h4>}>
-                    <div>As soon as a supplier picked up the packages he or she
-                    will be guided to the target locations.</div>
-                  </Collapse.Item>
-                  <Collapse.Item
-                    title={<h4><span className="counter">3</span>Earn rewards</h4>}>
-                    <div>By delivering packages to customers suppliers earn real
-                    money for the delivery.</div>
-                  </Collapse.Item>
-                  <Collapse.Item
-                    title={<h4><span className="counter">4</span>Find buddies</h4>}>
-                    <div>Especially older generations rely on people that bring
-                    their products right at their door. Suppliers can enter fixed
-                    relationships with people to help them whenever they need
-                    something.</div>
-                  </Collapse.Item>
-                </Collapse>
-                <div className="button-wrapper" style={{marginTop: 50}}>
-                  <NavLink
-                    to="/app/supplier"
-                    onClick={this.scrollTop}
-                    className="el-button el-button--primary">
-                    Discover the app
-                  </NavLink>
-                </div>
-              </Fade>
-            </Layout.Col>
-          </Layout.Row>
-
-          <hr id="customer" style={{marginBottom: 100}}/>
-
-          <Layout.Row gutter="60" className="flex-reverse-mobile mobile-align-center">
-            <Layout.Col xs="24" sm="16" md="12" lg="12">
-              <Fade top>
-                <h2 style={{marginBottom: 10}}>Customer</h2>
-                <p style={{marginBottom: 30}}>
-                  More and more people get aware of the importance of local
-                  economies. They see how many local businesses needs to close,
-                  but do not want to be without the service quality of platforms
-                  like amazon. Empowering people with a platform to have the same
-                  service quality but supporting local products and services has the
-                  potential to transform the awareness into real world action.
-                </p>
-              </Fade>
-              <Fade left>
-                <Collapse accordion value="0">
-                  <Collapse.Item title={<h4><span className="counter">1</span>Discover your neighborhood</h4>} >
-                    <div>Customers can find businesses and people offering products
-                    and services right in their neighborhood.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<h4><span className="counter">2</span>Delivery at your home</h4>}>
-                    <div>Many local businesses that currently cannot offer delivery
-                    services will be able to deal with delivery by using the Nile
-                    platform.</div>
-                  </Collapse.Item>
-                  <Collapse.Item title={<h4><span className="counter">3</span>Recurring orders</h4>}>
-                    <div>If customers buy products frequently they can create
-                    recurring orders. They will be delivered automatically right
-                    at the customers door.</div>
-                  </Collapse.Item>
-                </Collapse>
-                <div className="button-wrapper" style={{marginTop: 50}}>
-                  <NavLink
-                    to="/app/customer"
-                    onClick={this.scrollTop}
-                    className="el-button el-button--primary">
-                    Discover the app
-                  </NavLink>
-                </div>
-              </Fade>
-            </Layout.Col>
-            <Layout.Col sm="24" md="12" lg="12" className="flex-end just-center-mobile">
-              <Flip left>
-                <img alt="vendor" src={customer} />
-              </Flip>
-            </Layout.Col>
-          </Layout.Row>
-        </div>
-      </div>
+      <Fragment>
+        <UseCase sectionData={vendorData} />
+        <UseCase sectionData={supplierData} />
+        <UseCase sectionData={customerData} />
+      </Fragment>
     )
   }
 }

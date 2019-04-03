@@ -14,7 +14,7 @@ export default class extends Component {
         {
           title: 'Vendor',
           description: 'Think of small businesses like backeries, joineries and flower shops selling products. Or think of hair studios, doctors offices and repair shops selling services. We can even think of usual people selling art, honey and services they do hobby wise.',
-          target: 'use-cases',
+          target: 'vendor',
           image: './assets/vendor-circled.jpg'
         },
         {
