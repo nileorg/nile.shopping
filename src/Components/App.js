@@ -51,6 +51,7 @@ class App extends Component {
               component={HomeContainer}
             />
             <Route path='/app' component={AppContainer} />
+            <Route path='/app/vendor' component={VendorHome} exact />
             <Route path='/imprint' component={ImprintContainer} />
           </Switch>
         </BrowserRouter>
