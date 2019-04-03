@@ -62,7 +62,7 @@ export default class extends Component {
             >Ecosystem
             </Link>
             <Link
-              to="#use-cases"
+              to="#vendor"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               className={`${this.props.location.hash === '#use-cases' ? 'active' : ''} nav-item`}
             >Use Cases
