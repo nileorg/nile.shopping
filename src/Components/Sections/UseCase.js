@@ -10,13 +10,12 @@ export default class extends Component {
   }
   render () {
     const sectionData = this.props.sectionData
+
     const id = sectionData.id
     const border = sectionData.border
     const background = sectionData.background
-
     const title = sectionData.title
     const description = sectionData.description
-
 
     const itemsData = sectionData.items
     const items = itemsData.map((item, i) =>
@@ -65,6 +64,18 @@ export default class extends Component {
             />
           </Fade>
         </Layout.Col>
+    } else {
+      imageElement =
+        <Layout.Col sm="24" md="12" lg="12">
+          <span style={{opacity: 0}}>a</span>
+          <Fade top>
+            <img
+              alt={title}
+              src={image_path}
+              className={`mockup mockup--mobile ${image_right ? 'mockup--right' : 'mockup--left'} `}
+            />
+          </Fade>
+        </Layout.Col>
     }
 
     return (
@@ -74,7 +85,8 @@ export default class extends Component {
           section
           section--use-case section__${background}
           ${border ? 'section__border-top' : ''}
-          ${image_type === 'desktop' ? 'section--showcase' : ''}
+          ${image_type === 'desktop' || 'mobile' ? 'section--showcase' : ''}
+          ${image_type === 'mobile' ? 'mobile' : ''}
         `}
       >
         <div className="container">
