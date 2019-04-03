@@ -21,7 +21,7 @@ export default class extends Component {
           to="/imprint"
           onClick={this.scrollTop}
           activeClassName="active"
-        >Imprint
+        >Privacy Policy
         </NavLink>
       </footer>
 

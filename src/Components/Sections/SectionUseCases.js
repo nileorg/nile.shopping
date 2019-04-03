@@ -40,9 +40,10 @@ export default class extends Component {
                     <div>Everytime the vendor gets new deliveries or produces new products he needs to update his stock.</div>
                   </Collapse.Item>
                   <Collapse.Item title={<h4><span className="counter">3</span>Order Management</h4>}>
-                    <div>The vendor gets notified as soon as a new order arrives. He can see all orders and their status in the orders list.</div>
-                    <div>To prepare an order for delivery (make it accessable for the supplier) he needs to pack all the ordered products and an RFID card.</div>
-                    <div>When a supplier arrives the vendor simply scans the supplier's code and hands over the package.</div>
+                    <div>Each time a customer buys a product that is supposed to be
+                    delivered to him, an order gets created. The order needs to
+                    be packed when the customer has payed and needs to be handed
+                    over when a supplier wants to pick it up.</div>
                   </Collapse.Item>
                   <Collapse.Item title={<h4><span className="counter">4</span>Cashier System</h4>}>
                     <div>Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.</div>
