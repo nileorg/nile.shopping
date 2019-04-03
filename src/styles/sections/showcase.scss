@@ -6,6 +6,9 @@
 
 .section--showcase {
   height: 45vw;
+  &.mobile {
+    height: 800px;
+  }
   .mockup {
     position: absolute;
     width: 50%;
@@ -14,6 +17,15 @@
     &--right {
       left: auto;
       right: -100px;
+    }
+    &--mobile {
+      right: 55%;
+      left: auto;
+      width: 500px;
+    }
+    &--right.mockup--mobile {
+      left: 55%;
+      right: auto;
     }
   }
   .container, .el-row  {
@@ -42,6 +54,15 @@
         left: auto;
         right: -100px;
       }
+      &--mobile {
+        width: 50%;
+        left: 0;
+        top: 50px;
+      }
+      &--mobile.mockup--right {
+        left: auto;
+        right: 0;
+      }
     }
   }
 }
@@ -57,9 +78,19 @@
         left: auto;
         right: -100px;
       }
+      &--mobile {
+        width: 60% !important;
+        left: 20% !important;
+        top: 0 !important;
+      }
+    }
+    &.mobile {
+      height: auto;
     }
   }
+
 }
+
 
 @media only screen and (max-width: 768px ) {
   .section--showcase {
