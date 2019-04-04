@@ -1,35 +1,21 @@
 import React, { Component, Fragment } from 'react'
-import { NavLink } from 'react-router-dom'
 import { Layout } from 'element-react'
 import Fade from 'react-reveal/Fade'
 
-import hero from '../assets/heros/imprint_hero.png'
-import divider from '../assets/heros/divider.svg'
-import caret from '../assets/icons/caret-left.svg'
+import HeroSmall from '../Sections/HeroSmall'
+
 
 export default class extends Component {
   render () {
     return (
       <Fragment>
-        <Fade top>
-          <nav className={`app-nav`}>
-            <NavLink to="/" className="back-button">
-              <img alt="caret left" src={caret} />
-            </NavLink>
-          </nav>
-        </Fade>
-        <Fade top>
-          <div className={`section section--hero section--hero__sm`} style={{backgroundImage: `url(${hero})`}}>
-            <div className="hero-divider">
-              <img alt="divider" src={divider} className="divider"/>
-            </div>
-          </div>
-        </Fade>
+        <HeroSmall sectionData={heroSmallData} />
+
         <div className="section">
           <div className="container container-sm">
             <Layout.Row>
               <Layout.Col className="" span="24">
-                <Fade top>
+                <Fade left>
                   <h1>Privacy Policy</h1>
                   <p>We are very delighted that you have shown interest in our
                   enterprise. Data protection is of a particularly high priority
@@ -76,7 +62,7 @@ export default class extends Component {
                   the following terms:</p>
                   </Fade>
                   <ul style={{listStyle: 'none', padding: 0}}>
-                    <Fade top>
+                    <Fade left>
                       <li>
                         <h3>a) Personal data</h3>
                         <p>Personal data means any information relating to an
@@ -179,7 +165,7 @@ export default class extends Component {
                       </li>
                     </Fade>
                   </ul>
-                  <Fade top>
+                  <Fade left>
                     <h2>2. Name and Address of the controller</h2>
                     <p>Controller for the purposes of the General Data Protection
                     Regulation (GDPR), other data protection laws applicable in
@@ -239,7 +225,7 @@ export default class extends Component {
                     <h2>5. Rights of the data subject</h2>
                   </Fade>
                   <ul style={{listStyle: 'none', padding: 0}}>
-                    <Fade top>
+                    <Fade left>
                       <li>
                         <h3>a) Right of confirmation</h3>
                         <p>Each data subject shall have the right granted by the
@@ -510,7 +496,7 @@ export default class extends Component {
                       </li>
                     </Fade>
                   </ul>
-                  <Fade top>
+                  <Fade left>
                     <h2>6. Legal basis for the processing </h2>
                     <p>Art. 6(1) lit. a GDPR serves as the legal basis for
                     processing operations for which we obtain consent for a
@@ -611,4 +597,10 @@ export default class extends Component {
       </Fragment>
     )
   }
+}
+
+const heroSmallData = {
+  id: 'customer-hero',
+  background_url: '../assets/heros/imprint_hero.png',
+  avatar: false
 }

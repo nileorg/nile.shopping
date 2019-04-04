@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 // D E F A U L T S
@@ -21,72 +21,35 @@ import '../styles/sections/showcase.scss'
 import '../styles/sections/use-case.scss'
 import '../styles/sections/news.scss'
 
+// N A V   C O M P O N E N T S
 import Navigation from './Navigation'
-import SectionHero from './Sections/SectionHero'
-
-import SectionEcosystem from './Sections/SectionEcosystem'
-import SectionUseCases from './Sections/SectionUseCases'
-import SectionMission from './Sections/SectionMission'
-import SectionNews from './Sections/SectionNews'
-import SectionContact from './Sections/SectionContact'
 import Footer from './Footer'
 
-import Imprint from './Imprint'
+// P A G E S
+import Home from './Pages/Home'
+import Vendor from './Pages/Vendor'
+import Supplier from './Pages/Supplier'
+import Customer from './Pages/Customer'
+import Imprint from './Pages/Imprint'
 
-import AppNavigation from './Apps/AppNavigation'
 
-import VendorHome from './Apps/VendorHome'
-import SupplierHome from './Apps/SupplierHome'
-import CustomerHome from './Apps/CustomerHome'
-
-class App extends Component {
+export default class extends Component {
 
   render() {
     return (
       <div className="app">
         <BrowserRouter>
-          <Switch>
-            <Route exact
-              path='/'
-              component={HomeContainer}
-            />
-            <Route path='/app' component={AppContainer} />
-            <Route path='/imprint' component={ImprintContainer} />
-          </Switch>
+          <Route path='/' component={Navigation} />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/vendor' component={Vendor} exact />
+              <Route path='/supplier' component={Supplier} exact />
+              <Route path='/customer' component={Customer} exact />
+              <Route path='/imprint' component={Imprint} exact />
+            </Switch>
+          <Footer />
         </BrowserRouter>
       </div>
     )
   }
 }
-
-const HomeContainer = (props) => (
-  <Fragment>
-    <Route path='/' component={Navigation} />
-
-    <SectionHero />
-    <SectionEcosystem />
-    <SectionUseCases />
-    <SectionMission />
-    <SectionNews />
-    <SectionContact />
-
-    <Footer />
-  </Fragment>
-)
-
-const AppContainer = (props) => (
-  <Fragment>
-    <Route path='/app' component={AppNavigation} />
-    <Route path='/app/vendor' component={VendorHome} exact />
-    <Route path='/app/supplier' component={SupplierHome} exact />
-    <Route path='/app/customer' component={CustomerHome} exact />
-  </Fragment>
-)
-
-const ImprintContainer = (props) => (
-  <Fragment>
-    <Route path='/imprint' component={Imprint} exact />
-  </Fragment>
-)
-
-export default App
