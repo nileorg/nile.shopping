@@ -47,7 +47,7 @@ export default class extends Component {
     let imageElement
     if (image_type === 'circle') {
       imageElement =
-        <Layout.Col sm="24" md="12" lg="12" className="flex-end just-center-mobile">
+        <Layout.Col sm="24" md="12" lg="12" className={`${image_right ? 'flex-end' : ''} just-center-mobile`}>
           <Fade top>
             <img alt={title} src={image_path} className="circle"/>
           </Fade>
@@ -56,7 +56,7 @@ export default class extends Component {
       imageElement =
         <Layout.Col sm="24" md="16" lg="12">
           <span style={{opacity: 0}}>a</span>
-          <Fade top>
+          <Fade bottom>
             <img
               alt={title}
               src={image_path}
@@ -68,7 +68,7 @@ export default class extends Component {
       imageElement =
         <Layout.Col sm="24" md="12" lg="12">
           <span style={{opacity: 0}}>a</span>
-          <Fade top>
+          <Fade bottom>
             <img
               alt={title}
               src={image_path}
