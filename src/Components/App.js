@@ -17,8 +17,6 @@ import '../styles/elements/accordion.scss'
 // S E C T I O N S
 import '../styles/sections/sections.scss'
 import '../styles/sections/hero.scss'
-import '../styles/sections/showcase.scss'
-import '../styles/sections/use-case.scss'
 import '../styles/sections/news.scss'
 
 // N A V   C O M P O N E N T S

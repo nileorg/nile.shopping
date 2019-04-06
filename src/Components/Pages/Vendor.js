@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 
 import HeroSmall from '../Sections/HeroSmall'
 import VideoPromo from '../Sections/VideoPromo'
-import UseCase from '../Sections/UseCase'
+import ShowCase from '../Sections/ShowCase'
 
 export default class extends Component {
   render () {
@@ -11,11 +11,11 @@ export default class extends Component {
         <HeroSmall sectionData={heroSmallData} />
         <VideoPromo sectionData={videoPromoData} />
 
-        <UseCase sectionData={dashboardData} />
-        <UseCase sectionData={productData} />
-        <UseCase sectionData={orderData} />
-        <UseCase sectionData={cashierData} />
-        <UseCase sectionData={settingsData} />
+        <ShowCase sectionData={dashboardData} />
+        <ShowCase sectionData={productData} />
+        <ShowCase sectionData={orderData} />
+        <ShowCase sectionData={cashierData} />
+        <ShowCase sectionData={settingsData} />
       </Fragment>
     )
   }

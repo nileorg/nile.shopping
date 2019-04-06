@@ -10,6 +10,16 @@
   }
 }
 
+.container-fluid {
+  .content-column {
+    display: flex;
+    justify-content: flex-end;
+    .column-wrapper {
+      width: 600px;
+    }
+  }
+}
+
 // ------------------------------------------
 //  M O B I L E
 // ------------------------------------------
@@ -18,10 +28,25 @@
   .container {
     width: calc(100% - 60px);
   }
+  .container-fluid {
+    .el-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content-column {
+      .column-wrapper {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 992px ) {
   .container {
     width: calc(100% - 50px);
+  }
+  .container-fluid {
+    padding: 0 30px;
   }
 }

@@ -1,0 +1,63 @@
+// ------------------------------------------
+//  S E C T I O N   S H O W   C A S E
+// ------------------------------------------
+
+.section--show-case {
+  .mockup {
+    width: 100%;
+  }
+  .el-col.mobile {
+    display: flex;
+    justify-content: flex-end;
+    .mockup {
+      width: auto;
+      max-height: 800px;
+    }
+  }
+  .content-column {
+    justify-content: flex-start;
+  }
+  &.image_right {
+    .content-column {
+      justify-content: flex-end;
+    }
+    .el-col.mobile {
+      justify-content: flex-start;
+    }
+  }
+}
+
+// ------------------------------------------
+//  M O B I L E
+// ------------------------------------------
+
+@media only screen and (max-width: 1200px ) {
+  .section--show-case {
+    &.image_right {
+      .container-fluid {
+        .el-row {
+          flex-direction: column-reverse;
+        }
+      }
+    }
+    .mockup {
+      margin: 50px 0;
+    }
+    .el-col.mobile {
+      justify-content: center !important;
+      .mockup {
+        max-height: 600px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .section--show-case {
+    .el-col.mobile {
+      .mockup {
+        max-height: 500px;
+      }
+    }
+  }
+}
