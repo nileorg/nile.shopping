@@ -13,9 +13,9 @@ export default class extends Component {
 
         <UseCase sectionData={shopData} />
         <UseCase sectionData={productData} />
-        <UseCase sectionData={comingSoonRightData} />
-        <UseCase sectionData={comingSoonData} />
-
+        <UseCase sectionData={cartData} />
+        <UseCase sectionData={paymentData} />
+        <UseCase sectionData={deliveryData} />
       </Fragment>
     )
   }
@@ -25,7 +25,7 @@ const heroSmallData = {
   id: 'customer-hero',
   background_url: '../assets/heros/customer_hero.jpg',
   avatar: true,
-  avatar_url: '../assets/customer-circled.jpg'
+  avatar_url: '../assets/avatars/customer-circled.jpg'
 }
 const videoPromoData = {
   id: 'customer-promo',
@@ -37,7 +37,7 @@ const shopData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/Shop.png',
+  image_path: '../assets/mockups/customer/shop_cart.jpg',
   image_right: true,
   title: 'Shop',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -68,7 +68,7 @@ const productData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/Product.png',
+  image_path: '../assets/mockups/customer/product.jpg',
   image_right: false,
   title: 'Product',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -94,14 +94,14 @@ const productData = {
     }
   ]
 }
-const comingSoonData = {
-  id: 'feature-i',
+const cartData = {
+  id: 'cart',
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/coming_soon.jpg',
-  image_right: false,
-  title: 'Feature IV',
+  image_path: '../assets/mockups/customer/cart.jpg',
+  image_right: true,
+  title: 'Cart',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   button: false,
   link_to: '',
@@ -125,14 +125,45 @@ const comingSoonData = {
     }
   ]
 }
-const comingSoonRightData = {
-  id: 'feature-i',
+const paymentData = {
+  id: 'Payment',
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/coming_soon.jpg',
+  image_path: '../assets/mockups/customer/payment.jpg',
+  image_right: false,
+  title: 'Payment',
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  button: false,
+  link_to: '',
+  button_text: '',
+  items: [
+    {
+      title: 'Highlight I',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      title: 'Highlight II',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      title: 'Highlight III',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      title: 'Highlight IV',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    }
+  ]
+}
+const deliveryData = {
+  id: 'delivery',
+  border: true,
+  background: 'white',
+  image_type: 'mobile',
+  image_path: '../assets/mockups/customer/confirm_delivery.jpg',
   image_right: true,
-  title: 'Feature III',
+  title: 'Delivery',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   button: false,
   link_to: '',

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import Slide from 'react-reveal/Slide'
 
-import '../styles/navigation/main-nav.scss'
+import '../styles/navigation/navigation.scss'
 import logo from '../assets/nile_logo.svg'
 import nile_typo from '../assets/nile_typo.svg'
 

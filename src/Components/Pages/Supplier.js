@@ -16,7 +16,6 @@ export default class extends Component {
         <UseCase sectionData={pickupData} />
         <UseCase sectionData={deliveryData} />
         <UseCase sectionData={buddiesData} />
-
       </Fragment>
     )
   }
@@ -26,7 +25,7 @@ const heroSmallData = {
   id: 'supplier-hero',
   background_url: '../assets/heros/supplier_hero.jpg',
   avatar: true,
-  avatar_url: '../assets/supplier-circled.jpg'
+  avatar_url: '../assets/avatars/supplier-circled.jpg'
 }
 const videoPromoData = {
   id: 'supplier-promo',

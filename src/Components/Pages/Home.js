@@ -43,19 +43,19 @@ const ecosystemData = {
       title: 'Vendor',
       description: 'Think of small businesses like backeries, joineries and flower shops selling products. Or think of hair studios, doctors offices and repair shops selling services. We can even think of usual people selling art, honey and services they do hobby wise.',
       target: 'vendor',
-      image: './assets/vendor-circled.jpg'
+      image: './assets/avatars/vendor-circled.jpg'
     },
     {
       title: 'Supplier',
       description: 'Think of people driving to work everyday. Suppliers can see which packages are easy to ship depending on their route. This way the delivery is not just very efficient since there are almost no extra miles, the supplier also get rewards on the fly.',
       target: 'supplier',
-      image: './assets/supplier-circled.jpg'
+      image: './assets/avatars/supplier-circled.jpg'
     },
     {
       title: 'Customer',
       description: 'More and more people get aware of the importance of local economies. Empowering people with a platform to have a great service quality but supporting local people instead of giant cooperations has the potential to transform the awareness into action.',
       target: 'customer',
-      image: './assets/customer-circled.jpg'
+      image: './assets/avatars/customer-circled.jpg'
     }
   ]
 }
@@ -64,7 +64,7 @@ const vendorData = {
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/vendor-circled.jpg',
+  image_path: './assets/avatars/vendor-circled.jpg',
   image_right: true,
   title: 'Vendor',
   description: "People willing to sell something. There are many different businesses and people that are already selling products or services, but many of them does not have the capacities nor the money to conquer the web and there might also be even more people that have the potential but not yet the platform to do so.",
@@ -95,7 +95,7 @@ const supplierData = {
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/supplier-circled.jpg',
+  image_path: './assets/avatars/supplier-circled.jpg',
   image_right: false,
   title: 'Supplier',
   description: "People willing to ship something. Shipping products from one place to another is mostly done by corporations right now. Instead we could use the potential of usual people that drive around every day. They simply could pick up packages on their path and deliver it to the target location.",
@@ -126,7 +126,7 @@ const customerData = {
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/customer-circled.jpg',
+  image_path: './assets/avatars/customer-circled.jpg',
   image_right: true,
   title: 'Customer',
   description: "More and more people get aware of the importance of local economies. They see how many local businesses needs to close, but do not want to be without the service quality of platforms like amazon. Empowering people with a platform to have the same service quality but supporting local products and services has the potential to transform the awareness into real world action.",
@@ -159,19 +159,19 @@ const missionData = {
       title: 'Privacy',
       description: 'Data protection and user privacy is a huge topic today. The platform just saves the information which is needed and all users data is saved on the user’s devices.',
       target: null,
-      image: './assets/privacy.svg'
+      image: './assets/illustrations/privacy.svg'
     },
     {
       title: 'Feeless',
       description: 'Nile does not have fees at any level - it is 100% commission-free. Nile will always be free. There won’t be any extra pay features nor a pro version. The complete code is open source and free to use.',
       target: null,
-      image: './assets/feeless.svg'
+      image: './assets/illustrations/feeless.svg'
     },
     {
       title: 'Permissionless',
       description: 'Everyone can join the system without any registration hurdles. Even when you are signed in you can interact anonymously with other people in your ecosystem.',
       target: null,
-      image: './assets/permissionless.svg'
+      image: './assets/illustrations/permissionless.svg'
     }
   ]
 }
