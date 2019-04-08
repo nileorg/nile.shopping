@@ -7,7 +7,7 @@ import icon from '../../assets/icons/discord.svg'
 export default class extends Component {
   render () {
     return (
-      <div className="section section__light section__border-top" id="contact">
+      <div className="section section__border-top" id="contact">
         <div className="container">
           <Layout.Row type="flex" justify="center" >
             <Layout.Col sm="18" md="12" lg="12" className="center">

@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react"
 import Hero from '../Sections/Hero'
 import Cards from '../Sections/Cards'
 import UseCase from '../Sections/UseCase'
-import SectionNews from '../Sections/SectionNews'
+import News from '../Sections/News'
 import SectionContact from '../Sections/SectionContact'
 
 export default class extends Component {
@@ -16,7 +16,8 @@ export default class extends Component {
         <UseCase sectionData={supplierData} />
         <UseCase sectionData={customerData} />
         <Cards sectionData={missionData}/>
-        <SectionNews />
+        <News sectionData={mediumData}/>
+        <News sectionData={twitterData}/>
         <SectionContact />
       </Fragment>
     )
@@ -174,4 +175,28 @@ const missionData = {
       image: './assets/illustrations/permissionless.svg'
     }
   ]
+}
+const mediumData = {
+  id: 'medium',
+  border: 'true',
+  background: 'white',
+  title: 'Medium',
+  description: 'Every week we post new insights about our progress, team, ideas and evaluations on Medium and Twitter. Follow us to stay up to date!',
+  button: true,
+  link_to: 'https://medium.com/nile-shopping',
+  button_text: 'Follow us',
+  media_type: 'medium',
+  post_right: true
+}
+const twitterData = {
+  id: 'twitter',
+  border: 'true',
+  background: 'light',
+  title: 'Twitter',
+  description: 'Every week we post new insights about our progress, team, ideas and evaluations on Medium and Twitter. Follow us to stay up to date!',
+  button: true,
+  link_to: 'https://twitter.com/nile_org',
+  button_text: 'Follow us',
+  media_type: 'twitter',
+  post_right: false
 }

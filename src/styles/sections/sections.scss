@@ -18,11 +18,33 @@
   &__border-top {
     border-top: var(--border-sm_dark);
   }
+
 }
 
 // ------------------------------------------
 //  M O B I L E
 // ------------------------------------------
+
+@media only screen and (max-width: 992px) {
+  .section {
+    &.reverse-mobile {
+      .container {
+        .el-row {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+      }
+    }
+    .container {
+      .el-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 520px) {
   .section {
