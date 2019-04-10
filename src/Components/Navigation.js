@@ -54,9 +54,9 @@ export default class extends Component {
           </div>
           <div onClick={this.toggleNav} className={`${this.state.navActive ? 'open' : ''} ${this.state.activeClass} nav-menu`}>
             <Link
-              to="/vendor"
-              className={`${this.props.location.pathname === '/vendor' ? 'active' : ''} nav-item`}
-            >Vendor
+              to="/shop"
+              className={`${this.props.location.pathname === '/shop' ? 'active' : ''} nav-item`}
+            >Shop
             </Link>
             <Link
               to="/supplier"

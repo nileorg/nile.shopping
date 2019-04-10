@@ -12,7 +12,7 @@ export default class extends Component {
       <Fragment>
         <Hero sectionData={heroData} />
         <Cards sectionData={ecosystemData}/>
-        <UseCase sectionData={vendorData} />
+        <UseCase sectionData={shopData} />
         <UseCase sectionData={supplierData} />
         <UseCase sectionData={customerData} />
         <Cards sectionData={missionData}/>
@@ -41,53 +41,53 @@ const ecosystemData = {
   description: "Who needs to be empowered to let local economies flourish again? Its the people, the ones that want to sell something - called vendors, the ones that want to ship something - called suppliers and the ones that want to buy something - called customers. So to strengthen local economies we have three groups of people with different problems and requirements.",
   cards: [
     {
-      title: 'Vendor',
-      description: 'Think of small businesses like backeries, joineries and flower shops selling products. Or think of hair studios, doctors offices and repair shops selling services. We can even think of usual people selling art, honey and services they do hobby wise.',
-      target: 'vendor',
-      image: './assets/avatars/vendor-circled.jpg'
+      title: 'Shop',
+      description: 'Think of small businesses like bakeries, joineries and flower shops selling products. Or think of hair studios, doctors offices and repair shops selling services. We can even think of usual people selling art, honey and services they do hobby wise.',
+      target: 'shop',
+      image: './assets/avatars/shop-circled.jpg'
     },
     {
-      title: 'Supplier',
-      description: 'Think of people driving to work everyday. Suppliers can see which packages are easy to ship depending on their route. This way the delivery is not just very efficient since there are almost no extra miles, the supplier also get rewards on the fly.',
+      title: 'Delivery',
+      description: 'Nile offers a delivery platform for local orders; every certified user will be able to deliver goods in exchange for discounts or money. An algorithm calculates the best and cheapest route to deliver your goods.',
       target: 'supplier',
       image: './assets/avatars/supplier-circled.jpg'
     },
     {
-      title: 'Customer',
+      title: 'Buyer',
       description: 'More and more people get aware of the importance of local economies. Empowering people with a platform to have a great service quality but supporting local people instead of giant cooperations has the potential to transform the awareness into action.',
       target: 'customer',
       image: './assets/avatars/customer-circled.jpg'
     }
   ]
 }
-const vendorData = {
-  id: 'vendor',
+const shopData = {
+  id: 'shop',
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/avatars/vendor-circled.jpg',
+  image_path: './assets/avatars/shop-circled.jpg',
   image_right: true,
-  title: 'Vendor',
-  description: "People willing to sell something. There are many different businesses and people that are already selling products or services, but many of them does not have the capacities nor the money to conquer the web and there might also be even more people that have the potential but not yet the platform to do so.",
+  title: 'Shop',
+  description: "There are many different businesses and people that are already selling products or services, but many of them does not have the capacities nor the money to conquer the web and there might also be even more people that have the potential but not yet the platform to do so.",
   button: true,
-  link_to: '/vendor',
+  link_to: '/shop',
   button_text: 'Discover the app',
   items: [
     {
       title: 'Get started',
-      description: 'Initially a vendor needs to create a digitial twin for his shop, define his product blueprints and the initial stocks.'
+      description: 'Initially a shop owner needs to create a digital twin for the shop, so he defines his products blueprints and the initial inventory. Later he decides how to get paid from a list of existing payment system and how to deliver his products.'
     },
     {
-      title: 'Stock Management',
-      description: 'Everytime the vendor gets new deliveries or produces new products he needs to update his stock.'
+      title: 'Inventory Management',
+      description: 'Everytime the shop owner gets new supplies or produces new products he needs to update his inventory.'
     },
     {
-      title: 'Order Management',
-      description: 'Each time a customer buys a product that is supposed to be delivered to him, an order gets created. The order needs to be packed when the customer has payed and needs to be handed over when a supplier wants to pick it up.'
+      title: 'Boosted 🚀 order management',
+      description: 'Each time a buyer buys a product an order gets created. The show owner can manage information about the order and send various feedback to the buyer such as timers (so the buyer know how long it will take to receive the order) and the location of the product.'
     },
     {
       title: 'Cashier System',
-      description: 'Most vendors also have customers on site. To keep the stocks updated they simply can use the cashier system.'
+      description: 'Most shop owners also have customers on site. To keep the inventory updated they simply can use the cashier system.'
     }
   ]
 }
@@ -98,27 +98,23 @@ const supplierData = {
   image_type: 'circle',
   image_path: './assets/avatars/supplier-circled.jpg',
   image_right: false,
-  title: 'Supplier',
-  description: "People willing to ship something. Shipping products from one place to another is mostly done by corporations right now. Instead we could use the potential of usual people that drive around every day. They simply could pick up packages on their path and deliver it to the target location.",
+  title: 'Delivery',
+  description: "People willing to deliver something. Deliver products from one place to another is mostly done by corporations right now. Instead we use the potential of usual people that move around every day. They simply could pick up packages on their path and deliver it to the target location.",
   button: true,
   link_to: '/supplier',
   button_text: 'Discover the app',
   items: [
     {
       title: 'Pick up packages on your path',
-      description: 'Whenever someone drive from one place to another he or she can enter their route and see where they can pickup packages',
+      description: 'Whenever you drive from one place to another you can enter your route and see where you can pick up packages. If you have a routine path, just add it to Nile and you will receive notifications when there are packages on your path.',
     },
     {
       title: 'Guided delivery',
-      description: 'As soon as a supplier picked up the packages he or she will be guided to the target locations.',
+      description: 'As soon as you pick up the packages you will be guided to the target locations.',
     },
     {
-      title: 'Earn rewards',
-      description: 'By delivering packages to customers suppliers earn real money for the delivery.',
-    },
-    {
-      title: 'Find buddies',
-      description: 'Especially older generations rely on people that bring their products right at their door. Suppliers can enter fixed relationships with people to help them whenever they need something.'
+      title: 'Earn rewards 🏆',
+      description: 'By delivering packages to people, you can earn real money or coupons that you can spend in the shops.',
     }
   ]
 }
@@ -129,23 +125,23 @@ const customerData = {
   image_type: 'circle',
   image_path: './assets/avatars/customer-circled.jpg',
   image_right: true,
-  title: 'Customer',
-  description: "More and more people get aware of the importance of local economies. They see how many local businesses needs to close, but do not want to be without the service quality of platforms like amazon. Empowering people with a platform to have the same service quality but supporting local products and services has the potential to transform the awareness into real world action.",
+  title: 'Buyer',
+  description: "More and more people become aware of the importance of local economies. They see how many local businesses need to close, but do not want to be without the service quality of platforms like Amazon. Empowering people with a platform to have the same service quality but supporting local products and services has the potential to transform awareness into real-world action.",
   button: true,
   link_to: '/customer',
   button_text: 'Discover the app',
   items: [
     {
       title: 'Discover your neighborhood',
-      description: 'Customers can find businesses and people offering products and services right in their neighborhood.'
+      description: 'Customers can find businesses and people offering products and services right in their neighborhood. On Nile you can also find products like fresh food and services like transportation within your city.'
     },
     {
-      title: 'Delivery at your home',
-      description: 'Many local businesses that currently cannot offer delivery services will be able to deal with delivery by using the Nile platform.'
+      title: 'Send an order',
+      description: 'Buy a product and receive real-time feedback from the seller with the location of your package and estimated delivery time.'
     },
     {
-      title: 'Recurring orders',
-      description: 'If customers buy products frequently they can create recurring orders. They will be delivered automatically right at the customers door.'
+      title: 'Instant ⚡ Delivery',
+      description: 'Because products are local, the delivery community can deliver your package in less than an hour.'
     }
   ]
 }
@@ -154,16 +150,16 @@ const missionData = {
   border: true,
   background: 'light',
   title: 'Mission',
-  description: "Nile’s mission is to provide local economies with tools to compete with global giants. Today, global monopolies are putting local economies at risk, by offering better and faster services. People are buying almost everything from some global giants instead of supporting local markets. We deply believe that this can and has to be changed by ourselves, the usual people. It is time for Nile and those who share our mission to design a better way of commerce for a better tomorrow. We invite everybody out there that shares our mission and believes to stand up for an open and free set of tools to promote local economies.",
+  description: "Nile’s mission is to provide local economies with tools to compete with global giants. Today, global monopolies are putting local economies at risk, by offering better and faster services. People are buying almost everything from some global giants instead of supporting local markets. We deeply believe that this can and has to be changed by ourselves, the usual people. It is time for Nile and those who share our mission to design a better way of commerce for a better tomorrow. We invite everybody out there that shares our mission and believes to stand up for an open and free set of tools to promote local economies.",
   cards: [
     {
       title: 'Privacy',
-      description: 'Data protection and user privacy is a huge topic today. The platform just saves the information which is needed and all users data is saved on the user’s devices.',
+      description: 'Data protection and user privacy is a huge topic today. The public information is published on decentralized storage and all users private data is just saved on the user’s devices. A buyer shares the required information only with the people involved in the order.',
       target: null,
       image: './assets/illustrations/privacy.svg'
     },
     {
-      title: 'Feeless',
+      title: '100% Free - Forever!',
       description: 'Nile does not have fees at any level - it is 100% commission-free. Nile will always be free. There won’t be any extra pay features nor a pro version. The complete code is open source and free to use.',
       target: null,
       image: './assets/illustrations/feeless.svg'

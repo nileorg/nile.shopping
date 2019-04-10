@@ -25,7 +25,7 @@ import Footer from './Footer'
 
 // P A G E S
 import Home from './Pages/Home'
-import Vendor from './Pages/Vendor'
+import Shop from './Pages/Shop'
 import Supplier from './Pages/Supplier'
 import Customer from './Pages/Customer'
 import Imprint from './Pages/Imprint'
@@ -40,7 +40,7 @@ export default class extends Component {
           <Route path='/' component={Navigation} />
             <Switch>
               <Route exact path='/' component={Home} />
-              <Route path='/vendor' component={Vendor} exact />
+              <Route path='/shop' component={Shop} exact />
               <Route path='/supplier' component={Supplier} exact />
               <Route path='/customer' component={Customer} exact />
               <Route path='/imprint' component={Imprint} exact />

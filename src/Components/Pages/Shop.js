@@ -23,14 +23,14 @@ export default class extends Component {
 
 
 const heroSmallData = {
-  id: 'vendor-hero',
-  background_url: '../assets/heros/vendor_hero.jpg',
+  id: 'shop-hero',
+  background_url: '../assets/heros/shop_hero.jpg',
   avatar: true,
-  avatar_url: '../assets/avatars/vendor-circled.jpg'
+  avatar_url: '../assets/avatars/shop-circled.jpg'
 }
 const videoPromoData = {
-  id: 'vendor-promo',
-  title: 'Vendor',
+  id: 'shop-promo',
+  title: 'Shop',
   description: 'Vendors are the people selling products and services. They differentiate alot in terms of size, management and requirements to a platform like nile. Still most of the vendors need a tool to manage their products, services, orders, stock, cashier, team and last but not least their store.'
 }
 const dashboardData = {
@@ -38,7 +38,7 @@ const dashboardData = {
   border: true,
   background: 'white',
   image_type: 'desktop',
-  image_path: '../assets/mockups/vendor/dashboard.jpg',
+  image_path: '../assets/mockups/shop/dashboard.jpg',
   image_right: false,
   title: 'Dashboard',
   description: "The dashboard shows the overall performance of the store. It gives vendors a tool to analyse their strengths and weeknesses in order to continuously adapt their strategy to the needs of their customers.",
@@ -69,7 +69,7 @@ const productData = {
   border: true,
   background: 'white',
   image_type: 'desktop',
-  image_path: '../assets/mockups/vendor/product.jpg',
+  image_path: '../assets/mockups/shop/product.jpg',
   image_right: true,
   title: 'Product Management',
   description: "As one of the first steps a vendor needs to define all the product blueprints. A product blueprint is not the actual product, it is just a template. A real product gets created each time the stock gets increased.",
@@ -100,7 +100,7 @@ const orderData = {
   border: true,
   background: 'white',
   image_type: 'desktop',
-  image_path: '../assets/mockups/vendor/order.jpg',
+  image_path: '../assets/mockups/shop/order.jpg',
   image_right: false,
   title: 'Order Management',
   description: "Each time a customer buys a product that is supposed to be delivered to him, an order gets created. As soon as the order gets paid by the customer, the vendor needs to pack it. Next it needs to be handed over to a supplier and last but not least delivered to the target location.",
@@ -131,7 +131,7 @@ const cashierData = {
   border: true,
   background: 'white',
   image_type: 'desktop',
-  image_path: '../assets/mockups/vendor/cashier.jpg',
+  image_path: '../assets/mockups/shop/cashier.jpg',
   image_right: true,
   title: 'Cashier System',
   description: "Many businesses rely on a cashier system, but if a business has an online store it is even more important since the stock needs to be synchronised all the time.",
@@ -158,7 +158,7 @@ const settingsData = {
   border: true,
   background: 'white',
   image_type: 'desktop',
-  image_path: '../assets/mockups/vendor/settings.jpg',
+  image_path: '../assets/mockups/shop/settings.jpg',
   image_right: false,
   title: 'Settings',
   description: "Store management includes information, customisation, category management as well as team management.",
