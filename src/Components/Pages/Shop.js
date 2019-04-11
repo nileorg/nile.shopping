@@ -31,7 +31,7 @@ const heroSmallData = {
 const videoPromoData = {
   id: 'shop-promo',
   title: 'Shop',
-  description: 'Vendors are the people selling products and services. They differentiate alot in terms of size, management and requirements to a platform like nile. Still most of the vendors need a tool to manage their products, services, orders, stock, cashier, team and last but not least their store.'
+  description: 'The shop application allows any shopkeeper to take her business to the next level, for free! The shop application offers analysis tools, inventory management, user feedback and a lot more! Every time a new shop is created, Nile automatically creates an app for you, that you can install on both iOS and Android directly from the browser!'
 }
 const dashboardData = {
   id: 'dashboard',
@@ -41,26 +41,22 @@ const dashboardData = {
   image_path: '../assets/mockups/shop/dashboard.jpg',
   image_right: false,
   title: 'Dashboard',
-  description: "The dashboard shows the overall performance of the store. It gives vendors a tool to analyse their strengths and weeknesses in order to continuously adapt their strategy to the needs of their customers.",
+  description: 'The dashboard shows the overall performance of the store. It gives sellers a tool to analyse their strengths and weaknesses in order to continuously adapt their strategy to the needs of their customers.',
   button: false,
   link_to: '',
   button_text: '',
   items: [
     {
-      title: 'Turnover',
-      description: 'The most important information for the stores success is their turnover and revenue rate. By reflecting on ups and downs vendors can rapidly come up with counter measures.'
+      title: 'Revenue',
+      description: 'The most important information for the stores success is their and revenue rate. By reflecting on ups and downs vendors can rapidly come up with counter measures. '
     },
     {
       title: 'Compare Categories',
-      description: 'By comparing product categories to each other vendors can easily indicate the importance of their categories to their business.'
+      description: 'By comparing product categories to each other sellers can easily indicate the importance of their categories to their business.'
     },
     {
       title: 'Rankings',
-      description: 'Here vendors can see their top 10 of almost anything. Product sales in terms of quantity, turnover and revenue, Customers, Staff, Suppliers and many more.'
-    },
-    {
-      title: 'Agglomeration',
-      description: 'The agglomaration chart indicates where the most turnover comes from geographically.'
+      description: 'Here vendors can see their top 10 of almost anything. Product sales in terms of quantity and revenue, Customers, Staff, delivery and many more.'
     }
   ]
 }
@@ -72,26 +68,22 @@ const productData = {
   image_path: '../assets/mockups/shop/product.jpg',
   image_right: true,
   title: 'Product Management',
-  description: "As one of the first steps a vendor needs to define all the product blueprints. A product blueprint is not the actual product, it is just a template. A real product gets created each time the stock gets increased.",
+  description: 'The seller needs to define all of the products in the store, the user interface helps him duplicating existing products, handling variations and create banners for discount products.',
   button: false,
   link_to: '',
   button_text: '',
   items: [
     {
-      title: 'Create Blueprints',
-      description: 'The product blueprint includes information like name, description, bullet points, categories, price, stock limits and images.'
+      title: 'Create Products',
+      description: 'The product includes information like name, description, bullet points, categories, price, inventory limits, images and custom fields!'
     },
     {
       title: 'Change History',
-      description: 'Each time someone changes the blueprint information the application keeps track of what has when been changed by whom.'
-    },
-    {
-      title: 'Stock',
-      description: 'Besides the change history of blueprint information, there is also an information panel about the current stock including a change history for all increases and decreases.'
+      description: 'Each time someone changes a product information the application keeps track of what has when been changed by whom.'
     },
     {
       title: 'Preview',
-      description: 'In order to optimize the appearence of online store products, vendors can see a preview that demonstrates the look for their customers.'
+      description: 'In order to optimize the appearance of online store products, sellers can see a preview that demonstrates the look for their customers.'
     }
   ]
 }
@@ -103,26 +95,26 @@ const orderData = {
   image_path: '../assets/mockups/shop/order.jpg',
   image_right: false,
   title: 'Order Management',
-  description: "Each time a customer buys a product that is supposed to be delivered to him, an order gets created. As soon as the order gets paid by the customer, the vendor needs to pack it. Next it needs to be handed over to a supplier and last but not least delivered to the target location.",
+  description: 'Each time a customer buys a product, an order gets created. As soon as the order gets paid by the customer, the vendor needs to pack it. Next the seller and the buyer can interact with each other using powerful components such as location and timers. Finally the package needs to be handed over to a delivery method, it can also be a collection on the spot.',
   button: false,
   link_to: '',
   button_text: '',
   items: [
     {
-      title: 'Quick overview',
-      description: 'In two situations the vendor needs to interact with the order, first when it is payed and second when a supplier is ready to pick it up. The overview is designed to highlight those two use cases.',
+      title: 'Powerful feedback system',
+      description: 'The seller can interact with the buyer in various way, like set timers or the package location so the buyer knows the status of its order or simply ask for feedback (“Do you want ketchup in your burger 🍔 ?”).',
     },
     {
       title: 'Packaging process',
-      description: 'By selecting a payed order the vendor sees a todo list of the products he need to pack and can confirm packaging as soon as he has finished.',
+      description: 'By selecting a paid order the seller gets displayed a simple list of the products which have to packed into a package. Once the packaging is done, the seller can submit that the the package is ready to pick up.',
     },
     {
       title: 'Handover process',
-      description: 'When a supplier scans an order the vendor gets notified and needs to confirm the handing over process.',
+      description: 'When a delivery person scans an order the vendor gets notified and needs to confirm the handing over process. The components are now updated by the delivery person, so, for example, the user can see the real-time location of its order.',
     },
     {
       title: 'Change History',
-      description: "The order lifecycle has it's own change history to create trust for all parties. It keeps track of every status change.",
+      description: "The order lifecycle has its own change history to create trust for all parties. It keeps track of every status change without private information in a Distributed Ledger, so all entries are immutable.",
     }
   ]
 }
@@ -134,7 +126,7 @@ const cashierData = {
   image_path: '../assets/mockups/shop/cashier.jpg',
   image_right: true,
   title: 'Cashier System',
-  description: "Many businesses rely on a cashier system, but if a business has an online store it is even more important since the stock needs to be synchronised all the time.",
+  description: 'Many businesses rely on a cashier system, but if a business has an online store it is even more important since the stock needs to be synchronised all the time.',
   button: false,
   link_to: '',
   button_text: '',
@@ -148,8 +140,8 @@ const cashierData = {
       description: 'Vendors can also position another screen just for their customers to make purchases their transparent in real time.',
     },
     {
-      title: 'Commission-free payments',
-      description: 'Thanks to Nile and the underlying technology IOTA, there are zero commission-rates nor fees for the payments.',
+      title: 'Flexible payment system',
+      description: 'The seller can receive payments from a broad variety of payment system: centralized payment gateways like paypal or stripe, decentralized cryptocurrencies like bitcoins or IOTA, or simply cash.',
     }
   ]
 }
@@ -161,14 +153,14 @@ const settingsData = {
   image_path: '../assets/mockups/shop/settings.jpg',
   image_right: false,
   title: 'Settings',
-  description: "Store management includes information, customisation, category management as well as team management.",
+  description: 'Store management includes information, customisation, category management as well as team management.',
   button: false,
   link_to: '',
   button_text: '',
   items: [
     {
       title: 'Get started',
-      description: 'Initially a vendor needs to create a digitial twin for his store with basic information like the name, description, location and some links.',
+      description: 'Initially a vendor needs to create a digital twin for his store with basic information like the name, description, location and some links.',
     },
     {
       title: 'Customisation',
@@ -176,11 +168,11 @@ const settingsData = {
     },
     {
       title: 'Categories Management',
-      description: 'Some businesses have only a few categories others might even need subcategories. All product blueprints get at least one category.',
+      description: 'Some businesses have only a few categories others might even need subcategories. All product get at least one category.',
     },
     {
       title: 'Team Management',
-      description: 'Managing a team is quite simple, for each team member the vendor can define the access to each application like the dashboard, products, orders, cashier system and store settings.',
+      description: 'Managing a team is quite simple, for each team member the shopkeeper can define the access to each application like the dashboard, products, orders, cashier system and store settings.',
     }
   ]
 }
