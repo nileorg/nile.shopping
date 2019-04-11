@@ -2,7 +2,7 @@
   "name": "nile.shopping",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nileorg.github.io/nile.shopping/",
+  "homepage": "https://demo.nile.community",
   "dependencies": {
     "element-react": "^1.4.33",
     "element-theme-default": "^1.4.13",
@@ -19,9 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,8 +29,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  ]
 }
