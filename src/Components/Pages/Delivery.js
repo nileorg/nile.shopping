@@ -15,7 +15,6 @@ export default class extends Component {
         <ShowCase sectionData={findPackagesData} />
         <ShowCase sectionData={pickupData} />
         <ShowCase sectionData={deliveryData} />
-        <ShowCase sectionData={buddiesData} />
       </Fragment>
     )
   }
@@ -129,7 +128,7 @@ const deliveryData = {
     }
   ]
 }
-const buddiesData = {
+const rewardsData = {
   id: 'rewards',
   border: true,
   background: 'white',
