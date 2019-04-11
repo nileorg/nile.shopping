@@ -1,6 +1,6 @@
 {
-    "name": "Nile Home",
-    "short_name": "Nile Home",
+    "name": "nile.shopping",
+    "short_name": "nile.shopping",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
