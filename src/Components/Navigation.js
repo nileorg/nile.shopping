@@ -59,10 +59,10 @@ export default class extends Component {
             >Shop
             </Link>
             <Link
-              to="/supplier"
+              to="/delivery"
               scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}
-              className={`${this.props.location.pathname === '/supplier' ? 'active' : ''} nav-item`}
-            >Supplier
+              className={`${this.props.location.pathname === '/delivery' ? 'active' : ''} nav-item`}
+            >Delivery
             </Link>
             <Link
               to="/customer"

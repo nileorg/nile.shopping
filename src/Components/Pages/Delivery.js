@@ -22,14 +22,14 @@ export default class extends Component {
 }
 
 const heroSmallData = {
-  id: 'supplier-hero',
-  background_url: '../assets/heros/supplier_hero.jpg',
+  id: 'delivery-hero',
+  background_url: '../assets/heros/delivery_hero.jpg',
   avatar: true,
-  avatar_url: '../assets/avatars/supplier-circled.jpg'
+  avatar_url: '../assets/avatars/delivery-circled.jpg'
 }
 const videoPromoData = {
-  id: 'supplier-promo',
-  title: 'Supplier',
+  id: 'delivery-promo',
+  title: 'Delivery',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 }
 const dashboardData = {
@@ -37,7 +37,7 @@ const dashboardData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/dashboard_rewards.jpg',
+  image_path: '../assets/mockups/delivery/dashboard_rewards.jpg',
   image_right: false,
   title: 'Dashboard',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -68,7 +68,7 @@ const findPackagesData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/delivery_target.jpg',
+  image_path: '../assets/mockups/delivery/delivery_target.jpg',
   image_right: true,
   title: 'Find packages in your near',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -99,7 +99,7 @@ const pickupData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/pick_up_package.jpg',
+  image_path: '../assets/mockups/delivery/pick_up_package.jpg',
   image_right: false,
   title: 'Pick up packages from vendors',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -130,7 +130,7 @@ const deliveryData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/delivery_target_selected.jpg',
+  image_path: '../assets/mockups/delivery/delivery_target_selected.jpg',
   image_right: true,
   title: 'Guided delivery',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -161,7 +161,7 @@ const buddiesData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/supplier/delivery_target_selected.jpg',
+  image_path: '../assets/mockups/delivery/delivery_target_selected.jpg',
   image_right: false,
   title: 'Find buddies',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
