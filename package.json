@@ -2,7 +2,7 @@
   "name": "nile.shopping",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nile.shopping",
+  "homepage": "https://nileorg.github.io/nile.shopping",
   "dependencies": {
     "element-react": "^1.4.33",
     "element-theme-default": "^1.4.13",
