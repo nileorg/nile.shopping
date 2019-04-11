@@ -22,14 +22,14 @@ export default class extends Component {
 }
 
 const heroSmallData = {
-  id: 'customer-hero',
-  background_url: '../assets/heros/customer_hero.jpg',
+  id: 'buyer-hero',
+  background_url: '../assets/heros/buyer_hero.jpg',
   avatar: true,
-  avatar_url: '../assets/avatars/customer-circled.jpg'
+  avatar_url: '../assets/avatars/buyer-circled.jpg'
 }
 const videoPromoData = {
-  id: 'customer-promo',
-  title: 'Customer',
+  id: 'buyer-promo',
+  title: 'Buyer',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 }
 const shopData = {
@@ -37,7 +37,7 @@ const shopData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/shop_cart.jpg',
+  image_path: '../assets/mockups/buyer/shop_cart.jpg',
   image_right: true,
   title: 'Shop',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -68,7 +68,7 @@ const productData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/product.jpg',
+  image_path: '../assets/mockups/buyer/product.jpg',
   image_right: false,
   title: 'Product',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -99,7 +99,7 @@ const cartData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/cart.jpg',
+  image_path: '../assets/mockups/buyer/cart.jpg',
   image_right: true,
   title: 'Cart',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -130,7 +130,7 @@ const paymentData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/payment.jpg',
+  image_path: '../assets/mockups/buyer/payment.jpg',
   image_right: false,
   title: 'Payment',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -161,7 +161,7 @@ const deliveryData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/customer/confirm_delivery.jpg',
+  image_path: '../assets/mockups/buyer/confirm_delivery.jpg',
   image_right: true,
   title: 'Delivery',
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
