@@ -128,26 +128,3 @@ const deliveryData = {
     }
   ]
 }
-const rewardsData = {
-  id: 'rewards',
-  border: true,
-  background: 'white',
-  image_type: 'mobile',
-  image_path: '../assets/mockups/delivery/delivery_rewards.jpg',
-  image_right: false,
-  title: 'Earn rewards',
-  description: "Receive rewards once you complete the delivery!",
-  button: false,
-  link_to: '',
-  button_text: '',
-  items: [
-    {
-      title: 'Real Money',
-      description: 'You can decide to earn money: you set the price per km, the system will choose the delivery person with the feedback and $/km.',
-    },
-    {
-      title: 'Coupons',
-      description: 'If you prefer you can decide to get paid with coupons that you can use in the local shops: the longer is the path the more the reward will be interesting!.',
-    }
-  ]
-}
