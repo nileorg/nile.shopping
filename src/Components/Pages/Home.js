@@ -13,8 +13,8 @@ export default class extends Component {
         <Hero sectionData={heroData} />
         <Cards sectionData={ecosystemData}/>
         <UseCase sectionData={shopData} />
-        <UseCase sectionData={supplierData} />
-        <UseCase sectionData={customerData} />
+        <UseCase sectionData={deliveryData} />
+        <UseCase sectionData={buyerData} />
         <Cards sectionData={missionData}/>
         <News sectionData={mediumData}/>
         <News sectionData={twitterData}/>
@@ -38,7 +38,7 @@ const ecosystemData = {
   border: false,
   background: 'light',
   title: 'Ecosystem',
-  description: "Who needs to be empowered to let local economies flourish again? Its the people, the ones that want to sell something - called vendors, the ones that want to ship something - called suppliers and the ones that want to buy something - called customers. So to strengthen local economies we have three groups of people with different problems and requirements.",
+  description: "Who needs to be empowered to let local economies flourish again? Its the people, the ones that want to sell something - called vendors, the ones that want to ship something - called delivery and the ones that want to buy something - called buyers. So to strengthen local economies we have three groups of people with different problems and requirements.",
   cards: [
     {
       title: 'Shop',
@@ -49,14 +49,14 @@ const ecosystemData = {
     {
       title: 'Delivery',
       description: 'Nile offers a delivery platform for local orders; every certified user will be able to deliver goods in exchange for discounts or money. An algorithm calculates the best and cheapest route to deliver your goods.',
-      target: 'supplier',
-      image: './assets/avatars/supplier-circled.jpg'
+      target: 'delivery',
+      image: './assets/avatars/delivery-circled.jpg'
     },
     {
       title: 'Buyer',
       description: 'More and more people get aware of the importance of local economies. Empowering people with a platform to have a great service quality but supporting local people instead of giant cooperations has the potential to transform the awareness into action.',
-      target: 'customer',
-      image: './assets/avatars/customer-circled.jpg'
+      target: 'buyer',
+      image: './assets/avatars/buyer-circled.jpg'
     }
   ]
 }
@@ -87,21 +87,21 @@ const shopData = {
     },
     {
       title: 'Cashier System',
-      description: 'Most shop owners also have customers on site. To keep the inventory updated they simply can use the cashier system.'
+      description: 'Most shop owners also have buyers on site. To keep the inventory updated they simply can use the cashier system.'
     }
   ]
 }
-const supplierData = {
-  id: 'supplier',
+const deliveryData = {
+  id: 'delivery',
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/avatars/supplier-circled.jpg',
+  image_path: './assets/avatars/delivery-circled.jpg',
   image_right: false,
   title: 'Delivery',
   description: "People willing to deliver something. Deliver products from one place to another is mostly done by corporations right now. Instead we use the potential of usual people that move around every day. They simply could pick up packages on their path and deliver it to the target location.",
   button: true,
-  link_to: '/supplier',
+  link_to: '/delivery',
   button_text: 'Discover the app',
   items: [
     {
@@ -118,22 +118,22 @@ const supplierData = {
     }
   ]
 }
-const customerData = {
-  id: 'customer',
+const buyerData = {
+  id: 'buyer',
   border: true,
   background: 'white',
   image_type: 'circle',
-  image_path: './assets/avatars/customer-circled.jpg',
+  image_path: './assets/avatars/buyer-circled.jpg',
   image_right: true,
   title: 'Buyer',
   description: "More and more people become aware of the importance of local economies. They see how many local businesses need to close, but do not want to be without the service quality of platforms like Amazon. Empowering people with a platform to have the same service quality but supporting local products and services has the potential to transform awareness into real-world action.",
   button: true,
-  link_to: '/customer',
+  link_to: '/buyer',
   button_text: 'Discover the app',
   items: [
     {
       title: 'Discover your neighborhood',
-      description: 'Customers can find businesses and people offering products and services right in their neighborhood. On Nile you can also find products like fresh food and services like transportation within your city.'
+      description: 'Buyers can find businesses and people offering products and services right in their neighborhood. On Nile you can also find products like fresh food and services like transportation within your city.'
     },
     {
       title: 'Send an order',
