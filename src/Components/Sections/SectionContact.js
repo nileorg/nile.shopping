@@ -20,7 +20,7 @@ export default class extends Component {
                   mind about it. See you there!
                 </p>
                 <a
-                  href="https://twitter.com/nile_org"
+                  href="https://discord.gg/Uw9sU6J"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="el-button el-button--primary el-button--large"
