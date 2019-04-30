@@ -15,6 +15,7 @@ export default class extends Component {
         <ShowCase sectionData={findPackagesData} />
         <ShowCase sectionData={pickupData} />
         <ShowCase sectionData={deliveryData} />
+        <ShowCase sectionData={rewardData} />
       </Fragment>
     )
   }
@@ -125,6 +126,29 @@ const deliveryData = {
     {
       title: 'Buyer feedback',
       description: 'You can contact the buyer directly in the application, ask her questions or send feedback like real-time location or warn about a possible delay.',
+    }
+  ]
+}
+const rewardData = {
+  id: 'reward',
+  border: true,
+  background: 'white',
+  image_type: 'mobile',
+  image_path: '../assets/mockups/delivery/select_reward.png',
+  image_right: false,
+  title: 'Select your reward',
+  description: "Receive rewards once you complete the delivery!",
+  button: false,
+  link_to: '',
+  button_text: '',
+  items: [
+    {
+      title: 'Money',
+      description: 'You can decide to earn money: you set the price per km, the system will choose the delivery person with the feedback and $/km.',
+    },
+    {
+      title: 'Coupons',
+      description: 'If you prefer you can decide to get paid with coupons that you can use in the local shops: the longer is the path the more the reward will be interesting!',
     }
   ]
 }
