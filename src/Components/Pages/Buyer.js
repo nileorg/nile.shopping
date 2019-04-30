@@ -11,6 +11,7 @@ export default class extends Component {
         <HeroSmall sectionData={heroSmallData} />
         <VideoPromo sectionData={videoPromoData} />
 
+        <ShowCase sectionData={cityData} />
         <ShowCase sectionData={shopData} />
         <ShowCase sectionData={productData} />
         <ShowCase sectionData={cartData} />
@@ -31,6 +32,33 @@ const videoPromoData = {
   id: 'buyer-promo',
   title: 'Buyer',
   description: 'More and more people get aware of the importance of local economies. Empowering people with a platform to have a great service quality but supporting local people instead of giant corporations has the potential to transform the awareness into action.'
+}
+const cityData = {
+  id: 'city',
+  border: true,
+  background: 'white',
+  image_type: 'mobile',
+  image_path: '../assets/mockups/buyer/city.png',
+  image_right: false,
+  title: 'Browse local shops',
+  description: "This is the main view of Nile, here you see all the local shops. You can filter the shops specifying the category or the name of the product you are searching.",
+  button: false,
+  link_to: '',
+  button_text: '',
+  items: [
+    {
+      title: 'Filter shops',
+      description: 'Use categories or type the name of the product you are searching to filter the shops you see. When you enter the name of a product, next to the shop you see also a small preview of the product you are searching.',
+    },
+    {
+      title: 'Map view',
+      description: 'Display the results on a map!',
+    },
+    {
+      title: 'Nearby cities',
+      description: 'If you can’t find your product in your city, you can decide to extend your search to nearby cities!',
+    }
+  ]
 }
 const shopData = {
   id: 'shop',
