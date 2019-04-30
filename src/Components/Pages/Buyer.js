@@ -181,7 +181,7 @@ const deliveryData = {
   border: true,
   background: 'white',
   image_type: 'mobile',
-  image_path: '../assets/mockups/buyer/confirm_delivery.jpg',
+  image_path: '../assets/mockups/buyer/order_tracking.png',
   image_right: true,
   title: 'Boosted 🚀 Order Status',
   description: 'Nile offers powerful components that allows you to receive detailed information about your order. This information are updated in real time by the shop and the delivery person.',
