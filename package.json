@@ -8,7 +8,7 @@
     "element-theme-default": "^1.4.13",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
-    "react-dom": "npm:@hot-loader/react-dom",
+    "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.0",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.0.0",
